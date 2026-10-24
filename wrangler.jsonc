@@ -2,6 +2,8 @@
   // Déploiement sur Cloudflare Workers (fichiers statiques générés par Astro dans dist/)
   "name": "chantal-porras",
   "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": true,
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
