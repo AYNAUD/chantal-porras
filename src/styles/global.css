@@ -71,13 +71,18 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 }
 .entete-section h2 { font-size: clamp(30px, 4vw, 36px); }
 
+/* Grille en colonnes (maçonnerie) : chaque photo garde ses proportions, rien n'est rogné. */
 .grille-oeuvres {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 56px 40px;
+  columns: 3 280px;
+  column-gap: 40px;
+}
+.grille-oeuvres > * {
+  break-inside: avoid;
+  margin-bottom: 48px;
 }
 @media (max-width: 640px) {
-  .grille-oeuvres { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 16px; }
+  .grille-oeuvres { columns: 2; column-gap: 16px; }
+  .grille-oeuvres > * { margin-bottom: 28px; }
 }
 
 .texte-courant { max-width: 680px; color: var(--texte-doux); }

@@ -1,5 +1,6 @@
 ---
-// Affiche la photo si elle est présente dans public/, sinon un emplacement titré.
+// Affiche la photo entière, dans ses proportions d'origine, si elle est présente dans public/.
+// Sinon, un emplacement titré au ratio demandé.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -8,13 +9,41 @@ interface Props {
   alt: string;
   ratio?: string;
   chargement?: 'lazy' | 'eager';
+  hauteurMax?: string;
 }
 
-const { src, alt, ratio = '4 / 5', chargement = 'lazy' } = Astro.props;
-const present = fs.existsSync(path.join(process.cwd(), 'public', src));
+const { src, alt, ratio = '4 / 5', chargement = 'lazy', hauteurMax } = Astro.props;
+const fichier = path.join(process.cwd(), 'public', src);
+const present = fs.existsSync(fichier);
+
+// Lit largeur et hauteur dans l'en-tête JPEG, pour réserver la place avant chargement.
+function dimensionsJpeg(octets: Buffer) {
+  let i = 2;
+  while (i < octets.length) {
+    if (octets[i] !== 0xff) return null;
+    const marqueur = octets[i + 1];
+    const longueur = octets.readUInt16BE(i + 2);
+    if (marqueur >= 0xc0 && marqueur <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marqueur)) {
+      return { hauteur: octets.readUInt16BE(i + 5), largeur: octets.readUInt16BE(i + 7) };
+    }
+    i += 2 + longueur;
+  }
+  return null;
+}
+
+const dims = present ? dimensionsJpeg(fs.readFileSync(fichier)) : null;
 ---
 {present ? (
-  <img src={src} alt={alt} loading={chargement} decoding="async" style={`aspect-ratio: ${ratio}; object-fit: cover; width: 100%;`} />
+  <img
+    src={src}
+    alt={alt}
+    width={dims?.largeur}
+    height={dims?.hauteur}
+    loading={chargement}
+    decoding="async"
+    class="photo"
+    style={hauteurMax ? `max-height: ${hauteurMax};` : undefined}
+  />
 ) : (
   <div class="emplacement" role="img" aria-label={alt} style={`aspect-ratio: ${ratio};`}>
     <span>Photo · {alt}</span>
@@ -22,6 +51,13 @@ const present = fs.existsSync(path.join(process.cwd(), 'public', src));
 )}
 
 <style>
+  .photo {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
   .emplacement {
     width: 100%;
     background: var(--emplacement);

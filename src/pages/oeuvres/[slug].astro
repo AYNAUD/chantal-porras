@@ -21,7 +21,7 @@ const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
 <Base titre={oeuvre.titre} description={`${oeuvre.titre}, sculpture de Chantal Porras (${collection.nom}).`} image={oeuvre.image}>
   <article class="conteneur fiche">
     <figure class="fiche-visuel">
-      <Visuel src={oeuvre.image} alt={oeuvre.titre} ratio="4 / 5" chargement="eager" />
+      <Visuel src={oeuvre.image} alt={oeuvre.titre} ratio="4 / 5" chargement="eager" hauteurMax="80vh" />
     </figure>
     <div class="fiche-texte">
       <a href={`/collections/${collection.id}/`} class="surtitre">{collection.nom}</a>
