@@ -20,9 +20,9 @@ npm run build      # génère le site dans dist/
 Chaque œuvre attend sa photo dans `public/images/oeuvres/<slug>.jpg`. Tant qu'une photo manque, le site affiche un cadre titré à sa place.
 `npm run images` télécharge les photos depuis l'ancien site WordPress (à lancer depuis une machine qui peut joindre chantal-porras.fr). Une photo déjà présente n'est pas écrasée : on peut donc la remplacer par une meilleure version à la main.
 
-## Déploiement Cloudflare Pages
+## Déploiement Cloudflare (Workers, fichiers statiques)
 - Commande de build : `npm run build`
-- Dossier de sortie : `dist`
+- Commande de déploiement : `npx wrangler deploy` (lit `wrangler.jsonc`, qui publie le dossier `dist`)
 - `public/_redirects` redirige les anciennes adresses WordPress vers les nouvelles (301), pour garder le référencement.
 - `public/_headers` règle le cache des images.
 
