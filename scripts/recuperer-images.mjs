@@ -1,8 +1,12 @@
 // Télécharge les photos du site WordPress actuel vers public/images/.
 // À lancer depuis une machine qui peut joindre chantal-porras.fr : npm run images
 // Les fichiers déjà présents sont conservés, ce qui permet de les remplacer à la main par de meilleures photos.
+// Si le module « sharp » est installé, chaque photo est réduite à 1600 px de large au plus.
 import fs from 'node:fs';
 import path from 'node:path';
+
+let sharp = null;
+try { sharp = (await import('sharp')).default; } catch { /* sans redimensionnement */ }
 
 const lire = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, import.meta.url)));
 const cibles = [
@@ -18,10 +22,14 @@ for (const { image, source } of cibles) {
   const dest = path.join('public', image);
   if (fs.existsSync(dest)) { ignores++; continue; }
   try {
-    const rep = await fetch(source);
+    const rep = await fetch(source, { headers: { 'User-Agent': 'Mozilla/5.0 (migration chantal-porras.fr)' } });
     if (!rep.ok) throw new Error(`HTTP ${rep.status}`);
+    let octets = Buffer.from(await rep.arrayBuffer());
+    if (sharp) {
+      octets = await sharp(octets).rotate().resize({ width: 1600, withoutEnlargement: true }).jpeg({ quality: 82, mozjpeg: true }).toBuffer();
+    }
     fs.mkdirSync(path.dirname(dest), { recursive: true });
-    fs.writeFileSync(dest, Buffer.from(await rep.arrayBuffer()));
+    fs.writeFileSync(dest, octets);
     ok++;
   } catch (e) {
     echecs.push(`${source} (${e.message})`);
