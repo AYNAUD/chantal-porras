@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
+import archives from '../data/archives.json';
+import oeuvres from '../data/oeuvres.json';
+
+type Entree = {
+  annee: number; periode?: string; type: string; titre: string; lieu?: string; texte?: string;
+  liens?: { libelle: string; url: string }[]; actualite?: string; oeuvre?: string;
+};
+const entrees = archives as Entree[];
+const annees = [...new Set(entrees.map((e) => e.annee))];
+const compte = (t: string) => entrees.filter((e) => e.type === t).length;
+const filtres = [
+  { id: 'tout', libelle: 'Tout', nombre: entrees.length },
+  { id: 'Exposition', libelle: 'Expositions', nombre: compte('Exposition') },
+  { id: 'Salon', libelle: 'Salons', nombre: compte('Salon') },
+  { id: 'Distinction', libelle: 'Distinctions', nombre: compte('Distinction') },
+  { id: 'Presse', libelle: 'Presse', nombre: compte('Presse') },
+];
+const galeries = [
+  { nom: 'Galerie Estades', villes: 'Paris · Lyon · Toulon', url: 'https://www.estades.com/chantal-porras/' },
+  { nom: 'Galerie Origines', villes: 'Arles', url: 'https://www.galerieorigines.com/artistes/porras-chantal' },
+  { nom: 'Galerie Harmattan', villes: 'Megève', url: 'https://www.harmattan-megeve.com/chantal-porras' },
+  { nom: 'Couck Art Gallery', villes: 'Bruxelles', url: 'https://couckart.be/oeuvres/' },
+  { nom: 'Galerie PrestaArt', villes: 'Sud de la France', url: 'https://www.prestaart.com/porras-galerie-prestaart/' },
+];
+---
+<Base titre="Archives" description="Expositions, salons, distinctions et presse : le parcours de Chantal Porras année par année.">
+  <section class="conteneur section entete">
+    <p class="surtitre">Parcours · {annees.at(-1)} – {annees[0]}</p>
+    <h1>Archives</h1>
+    <p class="intro">Expositions, salons, distinctions et articles de presse, année par année. Chaque ligne renvoie à sa source quand elle est disponible.</p>
+    <div class="filtres" role="group" aria-label="Filtrer les archives">
+      {filtres.filter((f) => f.nombre > 0).map((f, i) => (
+        <button type="button" data-filtre={f.id} aria-pressed={i === 0 ? 'true' : 'false'}>
+          {f.libelle} <span>{f.nombre}</span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <section class="conteneur chronologie">
+    {annees.map((annee) => (
+      <div class="annee" data-annee={annee}>
+        <h2>{annee}</h2>
+        <ol>
+          {entrees.filter((e) => e.annee === annee).map((e) => {
+            const oeuvre = e.oeuvre && oeuvres.find((o) => o.slug === e.oeuvre);
+            return (
+              <li data-type={e.type}>
+                <div class="meta">
+                  <span class="type">{e.type}</span>
+                  {e.periode && <span class="periode">{e.periode}</span>}
+                </div>
+                <div class="corps">
+                  <h3>{e.titre}</h3>
+                  {e.lieu && <p class="lieu">{e.lieu}</p>}
+                  {e.texte && <p class="texte">{e.texte}</p>}
+                  {(e.liens || e.actualite || oeuvre) && (
+                    <p class="liens">
+                      {oeuvre && <a href={`/oeuvres/${oeuvre.slug}/`}>Voir l'œuvre</a>}
+                      {e.actualite && <a href={`/actualites/#${e.actualite}`}>Dans les actualités</a>}
+                      {e.liens?.map((l) => <a href={l.url} rel="noopener">{l.libelle} ↗</a>)}
+                    </p>
+                  )}
+                </div>
+                {oeuvre && (
+                  <a class="vignette" href={`/oeuvres/${oeuvre.slug}/`}>
+                    <Visuel src={oeuvre.image} alt={oeuvre.titre} hauteurMax="180px" chargement="eager" />
+                  </a>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    ))}
+  </section>
+
+  <section class="conteneur section galeries">
+    <div class="entete-section">
+      <h2>Galeries</h2>
+      <span class="surtitre">Où voir ses bronzes</span>
+    </div>
+    <ul>
+      {galeries.map((g) => (
+        <li><a href={g.url} rel="noopener"><span class="nom">{g.nom}</span><span class="villes">{g.villes}</span></a></li>
+      ))}
+    </ul>
+    <p class="note">Ces archives sont en cours de constitution. Une exposition ou un article manque ? <a href="/contact/">Écrivez-nous</a>.</p>
+  </section>
+</Base>
+
+<script>
+  const boutons = document.querySelectorAll<HTMLButtonElement>('.filtres button');
+  boutons.forEach((b) => b.addEventListener('click', () => {
+    const filtre = b.dataset.filtre;
+    boutons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    document.querySelectorAll<HTMLElement>('.chronologie li').forEach((li) => {
+      li.hidden = filtre !== 'tout' && li.dataset.type !== filtre;
+    });
+    document.querySelectorAll<HTMLElement>('.annee').forEach((a) => {
+      a.hidden = !a.querySelector('li:not([hidden])');
+    });
+  }));
+</script>
+
+<style>
+  .entete { padding-bottom: 40px; }
+  h1 { font-size: clamp(42px, 6vw, 64px); margin-top: 12px; }
+  .intro { max-width: 620px; color: var(--texte-doux); margin: 20px 0 32px; }
+  .filtres { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filtres button {
+    font: inherit; font-size: 14px; cursor: pointer; padding: 8px 16px; min-height: 40px;
+    background: transparent; color: var(--texte-doux); border: 1px solid var(--filet); border-radius: 999px;
+  }
+  .filtres button span { color: var(--texte-discret); margin-left: 4px; }
+  .filtres button[aria-pressed='true'] { background: var(--texte); color: var(--fond); border-color: var(--texte); }
+  .filtres button[aria-pressed='true'] span { color: var(--fond-alt); }
+
+  .chronologie { padding-bottom: 64px; }
+  .annee { display: flex; flex-wrap: wrap; gap: 0 48px; border-top: 1px solid var(--filet); padding: 32px 0; }
+  .annee[hidden] { display: none; }
+  .annee h2 { flex: 0 0 140px; font-size: clamp(40px, 5vw, 56px); line-height: 1; color: var(--accent); position: sticky; top: 24px; align-self: flex-start; }
+  .annee ol { flex: 1 1 420px; list-style: none; margin: 0; padding: 0; min-width: 0; }
+  .annee li { display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 8px 0 28px; }
+  .annee li + li { border-top: 1px dashed var(--filet); padding-top: 28px; }
+  .annee li[hidden] { display: none; }
+  .meta { flex: 0 0 160px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+  .type { text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px; color: var(--texte-discret); }
+  .periode { color: var(--texte-doux); }
+  .corps { flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .corps h3 { font-size: 26px; line-height: 1.15; }
+  .corps p { margin: 0; }
+  .lieu { color: var(--texte-doux); font-style: italic; font-family: var(--serif); font-size: 19px; }
+  .texte { color: var(--texte-doux); }
+  .liens { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; margin-top: 4px !important; }
+  .liens a { border-bottom: 1px solid var(--filet); }
+  .liens a:hover { border-color: currentColor; }
+  .vignette { flex: 0 0 140px; }
+
+  .galeries ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 32px; }
+  .galeries li a { display: flex; flex-direction: column; gap: 4px; padding: 20px 0; border-top: 1px solid var(--filet); }
+  .galeries .nom { font-family: var(--serif); font-size: 24px; }
+  .galeries .villes { font-size: 14px; color: var(--texte-discret); }
+  .note { margin-top: 40px; color: var(--texte-discret); font-size: 14px; }
+  .note a { border-bottom: 1px solid currentColor; }
+
+  @media (max-width: 640px) {
+    .annee h2 { position: static; margin-bottom: 16px; }
+    .meta { flex-direction: row; flex-basis: 100%; gap: 12px; align-items: baseline; }
+  }
+</style>
