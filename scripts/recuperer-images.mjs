@@ -20,7 +20,7 @@ const cibles = [
 let ok = 0, ignores = 0, echecs = [];
 for (const { image, source } of cibles) {
   const dest = path.join('public', image);
-  if (fs.existsSync(dest)) { ignores++; continue; }
+  if (!source || fs.existsSync(dest)) { ignores++; continue; }
   try {
     const rep = await fetch(source, { headers: { 'User-Agent': 'Mozilla/5.0 (migration chantal-porras.fr)' } });
     if (!rep.ok) throw new Error(`HTTP ${rep.status}`);

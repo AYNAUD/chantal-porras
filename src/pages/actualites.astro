@@ -13,11 +13,17 @@ const formatDate = (d: string) =>
     <div class="liste">
       {actualites.map((a) => (
         <article class="actu" id={a.slug}>
-          <div class="actu-visuel"><Visuel src={a.image} alt={a.titre} ratio="4 / 3" /></div>
+          <div class="actu-visuel"><Visuel src={a.image} alt={a.titre} ratio="4 / 3" hauteurMax="340px" /></div>
           <div class="actu-texte">
             <p class="surtitre">{a.rubrique} · <time datetime={a.date}>{formatDate(a.date)}</time></p>
             <h2>{a.titre}</h2>
             <p>{a.texte}</p>
+            {a.infos && <p class="infos">{a.infos}</p>}
+            {a.liens && (
+              <p class="liens">
+                À lire : {a.liens.map((l, i) => <>{i > 0 && ' · '}<a href={l.url} rel="noopener">{l.libelle}</a></>)}
+              </p>
+            )}
           </div>
         </article>
       ))}
@@ -33,4 +39,7 @@ const formatDate = (d: string) =>
   .actu-texte { flex: 999 1 360px; display: flex; flex-direction: column; gap: 12px; }
   .actu-texte h2 { font-size: 34px; }
   .actu-texte p:not(.surtitre) { margin: 0; color: var(--texte-doux); }
+  .actu-texte .infos { font-size: 14px; }
+  .actu-texte .liens { font-size: 14px; }
+  .liens a { border-bottom: 1px solid currentColor; }
 </style>

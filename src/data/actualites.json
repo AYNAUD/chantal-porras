@@ -1,5 +1,87 @@
 [
-  { "slug": "prix-nobel-de-la-paix", "titre": "Prix Nobel de la paix", "rubrique": "Événements", "date": "2019-05-17", "image": "/images/actualites/prix-nobel-de-la-paix.jpg", "source": "https://chantal-porras.fr/wp-content/uploads/2019/05/IMG_0225.jpg", "texte": "[TEXTE À RÉDIGER PAR CHANTAL]" },
-  { "slug": "vivre-nimes", "titre": "Vivre Nîmes", "rubrique": "Presse", "date": "2019-05-17", "image": "/images/actualites/vivre-nimes.jpg", "source": "https://chantal-porras.fr/wp-content/uploads/2019/05/Screenshot_20190205-175223-e1558099400193.jpg", "texte": "[TEXTE À RÉDIGER PAR CHANTAL]" },
-  { "slug": "article-midi-libre", "titre": "Article dans Midi Libre", "rubrique": "Presse", "date": "2019-03-07", "image": "/images/actualites/article-midi-libre.jpg", "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/DSC_6493.jpg", "texte": "[TEXTE À RÉDIGER PAR CHANTAL]" }
+ {
+  "slug": "exposition-lyon-2026",
+  "titre": "Exposition à la Galerie Michel Estades, Lyon",
+  "rubrique": "Exposition",
+  "date": "2026-09-19",
+  "image": "/images/oeuvres/grizzly.jpg",
+  "texte": "Du 19 septembre au 14 novembre 2026, la Galerie Michel Estades de Lyon réunit les bronzes de Chantal Porras et les peintures de Marc Dailly. Une cinquantaine de sculptures y sont présentées, dont le Grizzly et la Grue royale. Son travail récent s'attache aussi à des espèces moins connues, comme le rhinopithèque, le tarsier ou le tamanoir.",
+  "infos": "Galerie Michel Estades, 61 quai Saint-Vincent, 69001 Lyon. Du mardi au samedi, 10 h à 13 h et 14 h à 19 h.",
+  "liens": [
+   {
+    "libelle": "La galerie",
+    "url": "https://www.estades.com/en/expositions/chantal-porras-marc-dailly/"
+   },
+   {
+    "libelle": "Lyon People",
+    "url": "https://www.lyonpeople.com/actualites-lyon/actualites-culturelles-patrimoine/lyon-divines-idylles-a-la-galerie-michel-estades-2026-09-19.html"
+   },
+   {
+    "libelle": "BlablaARTS",
+    "url": "https://blablaarts.over-blog.com/2026/09/chantal-porras-et-marc-dailly-deux-artistes-exposes-a-lyon.html"
+   }
+  ]
+ },
+ {
+  "slug": "exposition-toulon-2023",
+  "titre": "« Porras – Bronzes » à la Galerie Estades, Toulon",
+  "rubrique": "Exposition",
+  "date": "2023-03-29",
+  "image": "/images/oeuvres/rhinopitheque.jpg",
+  "texte": "Au printemps 2023, la Galerie Estades de Toulon consacre une exposition aux bronzes de Chantal Porras, jusqu'au 29 avril. Le magazine Cité des Arts y voit « des bronzes animaliers pas comme les autres » et revient sur son parcours, des cours du soir aux Beaux-Arts de Nîmes jusqu'à la sculpture animalière. Chaque bronze est tiré à douze exemplaires au plus : huit originaux et quatre épreuves d'artiste.",
+  "liens": [
+   {
+    "libelle": "Cité des Arts",
+    "url": "https://citedesarts.net/chantal-porras-des-bronzes-animaliers-pas-comme-les-autres/"
+   }
+  ]
+ },
+ {
+  "slug": "exposition-paris-2021",
+  "titre": "« Bronzes animaliers » à la Galerie Estades, Paris",
+  "rubrique": "Exposition",
+  "date": "2021-05-22",
+  "image": "/images/oeuvres/panthere-noire.jpg",
+  "texte": "Du 22 mai au 3 juillet 2021, la Galerie Estades de la place des Vosges présente une exposition personnelle de Chantal Porras. Panthères, gorilles, rhinocéros et colibris y témoignent de l'élégance et du caractère de chaque animal, avec une attention particulière aux espèces menacées.",
+  "infos": "Galerie Estades, 17 place des Vosges, 75004 Paris.",
+  "liens": [
+   {
+    "libelle": "Annonce de l'exposition",
+    "url": "https://oam.io/expositions/chantal-porras-bronzes-animaliers"
+   }
+  ]
+ },
+ {
+  "slug": "vivre-nimes",
+  "titre": "Vivre Nîmes",
+  "rubrique": "Presse",
+  "date": "2019-05-17",
+  "image": "/images/actualites/vivre-nimes.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/05/Screenshot_20190205-175223-e1558099400193.jpg",
+  "texte": "Le magazine de la Ville de Nîmes, Vivre Nîmes, consacre un article à Chantal Porras, sculptrice nîmoise formée à l'École des Beaux-Arts de la ville."
+ },
+ {
+  "slug": "article-midi-libre",
+  "titre": "Article dans Midi Libre",
+  "rubrique": "Presse",
+  "date": "2019-03-07",
+  "image": "/images/actualites/article-midi-libre.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/DSC_6493.jpg",
+  "texte": "Le quotidien Midi Libre présente le travail de Chantal Porras dans ses pages locales."
+ },
+ {
+  "slug": "prix-nobel-de-la-paix",
+  "titre": "Le buste du Dr Denis Mukwege, prix Nobel de la paix",
+  "rubrique": "Événement",
+  "date": "2018-12-02",
+  "image": "/images/actualites/prix-nobel-de-la-paix.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/05/IMG_0225.jpg",
+  "texte": "Un chirurgien belge, collectionneur de ses œuvres, commande à Chantal Porras le buste du Dr Denis Mukwege, pour le lui offrir. La commande est passée avant l'annonce du prix Nobel de la paix 2018 : la sculptrice apprend la nouvelle à la télévision la semaine suivante, et dispose d'environ un mois pour achever le portrait en terre cuite. Une édition en bronze est ensuite prévue.",
+  "liens": [
+   {
+    "libelle": "Artistes d'Occitanie",
+    "url": "https://www.artistes-occitanie.fr/la-nimoise-chantal-porras-fait-le-buste-du-prix-nobel-de-la-paix-le-dr-mukwege/"
+   }
+  ]
+ }
 ]
