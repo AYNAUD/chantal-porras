@@ -23,18 +23,55 @@
   ]
  },
  {
+  "slug": "galerie-harmattan-megeve",
+  "titre": "Galerie Harmattan, Megève",
+  "rubrique": "Galerie",
+  "image": "/images/oeuvres/loutre.jpg",
+  "texte": "À Megève, la Galerie Harmattan présente en permanence une sélection de bronzes originaux de Chantal Porras, signés et numérotés. La galerie salue une œuvre qui fait une place aux animaux souvent délaissés par la statuaire, comme le lycaon, la loutre, l'impala ou le lynx, avec des lignes douces et des patines profondes.",
+  "infos": "Galerie Harmattan, 40 rue Saint-Jean, 74120 Megève.",
+  "liens": [
+   {
+    "libelle": "La galerie",
+    "url": "https://www.harmattan-megeve.com/chantal-porras"
+   }
+  ]
+ },
+ {
+  "slug": "galerie-couck-bruxelles",
+  "titre": "Couck Art Gallery, Bruxelles",
+  "rubrique": "Galerie",
+  "image": "/images/oeuvres/panda-roux.jpg",
+  "texte": "Au cœur du Sablon, à Bruxelles, la Couck Art Gallery, spécialisée dans la sculpture animalière, présente des bronzes de Chantal Porras, parmi lesquels les Suricates et le Panda roux.",
+  "infos": "Couck Art Gallery, rue Ernest Allard 32, 1000 Bruxelles.",
+  "liens": [
+   {
+    "libelle": "Suricates",
+    "url": "https://couckart.be/oeuvre/suricates-chantal-porras/"
+   },
+   {
+    "libelle": "Panda roux",
+    "url": "https://couckart.be/oeuvre/panda-roux-chantal-porras/"
+   }
+  ]
+ },
+ {
   "slug": "exposition-toulon-2023",
   "titre": "« Porras – Bronzes » à la Galerie Estades, Toulon",
   "rubrique": "Exposition",
-  "date": "2023-03-29",
+  "date": "2023-03-04",
   "image": "/images/oeuvres/rhinopitheque.jpg",
-  "texte": "Au printemps 2023, la Galerie Estades de Toulon consacre une exposition aux bronzes de Chantal Porras, jusqu'au 29 avril. Le magazine Cité des Arts y voit « des bronzes animaliers pas comme les autres » et revient sur son parcours, des cours du soir aux Beaux-Arts de Nîmes jusqu'à la sculpture animalière. Chaque bronze est tiré à douze exemplaires au plus : huit originaux et quatre épreuves d'artiste.",
+  "texte": "Au printemps 2023, la Galerie Estades de Toulon consacre une exposition aux bronzes de Chantal Porras, à partir du 4 mars. Le vernissage s'accompagne d'une démonstration de fonte en direct. Le magazine Cité des Arts y voit « des bronzes animaliers pas comme les autres » et revient sur son parcours, des cours du soir aux Beaux-Arts de Nîmes jusqu'à la sculpture animalière. Chaque bronze est tiré à douze exemplaires au plus : huit originaux et quatre épreuves d'artiste.",
   "liens": [
    {
     "libelle": "Cité des Arts",
     "url": "https://citedesarts.net/chantal-porras-des-bronzes-animaliers-pas-comme-les-autres/"
+   },
+   {
+    "libelle": "Aralya",
+    "url": "https://www.aralya.fr/expositions/chantal-porras-2/"
    }
-  ]
+  ],
+  "infos": "Galerie Estades, 18 rue Henri Seillon, 83000 Toulon."
  },
  {
   "slug": "exposition-paris-2021",

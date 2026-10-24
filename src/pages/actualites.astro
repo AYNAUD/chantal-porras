@@ -15,7 +15,7 @@ const formatDate = (d: string) =>
         <article class="actu" id={a.slug}>
           <div class="actu-visuel"><Visuel src={a.image} alt={a.titre} ratio="4 / 3" hauteurMax="340px" /></div>
           <div class="actu-texte">
-            <p class="surtitre">{a.rubrique} · <time datetime={a.date}>{formatDate(a.date)}</time></p>
+            <p class="surtitre">{a.date ? <>{a.rubrique} · <time datetime={a.date}>{formatDate(a.date)}</time></> : `${a.rubrique} · Œuvres présentées en permanence`}</p>
             <h2>{a.titre}</h2>
             <p>{a.texte}</p>
             {a.infos && <p class="infos">{a.infos}</p>}
