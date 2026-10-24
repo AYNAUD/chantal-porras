@@ -9,7 +9,8 @@
   "annee": 2025,
   "image": "/images/oeuvres/ara.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/CHANTALPORRAS202504165149.jpg",
-  "ancienneUrl": "/sculptures/ara/"
+  "ancienneUrl": "/sculptures/ara/",
+  "texte": "Perché sur une fine tige de métal, l'ara déploie le bleu et le jaune de son plumage en longues lignes tendues. La couleur, rare dans le bestiaire, fait ici tout le portrait."
  },
  {
   "slug": "grizzly",
@@ -21,7 +22,8 @@
   "annee": 2025,
   "image": "/images/oeuvres/grizzly.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/CHANTALPORRAS202504165123.jpg",
-  "ancienneUrl": "/sculptures/grizzy/"
+  "ancienneUrl": "/sculptures/grizzy/",
+  "texte": "Un ours massif, campé sur ses quatre pattes, la tête légèrement tournée vers nous. Les grands plans de la patine brun-vert laissent la lumière dessiner la puissance de l'épaule."
  },
  {
   "slug": "oryx",
@@ -33,7 +35,8 @@
   "annee": 2025,
   "image": "/images/oeuvres/oryx.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/Capture-plein-ecran-27042025-110920.bmp.jpg",
-  "ancienneUrl": "/sculptures/oryx/"
+  "ancienneUrl": "/sculptures/oryx/",
+  "texte": "L'oryx avance d'un pas suspendu, la tête haute sous ses longues cornes annelées. Sa silhouette sombre et lustrée tient tout entière dans la diagonale des cornes."
  },
  {
   "slug": "panthere-noire-2",
@@ -45,7 +48,8 @@
   "annee": 2025,
   "image": "/images/oeuvres/panthere-noire-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/Capture-plein-ecran-27042025-111433.bmp.jpg",
-  "ancienneUrl": "/sculptures/panthere-noir-2/"
+  "ancienneUrl": "/sculptures/panthere-noir-2/",
+  "texte": "Allongée dans la marche, la queue relevée en crosse, la panthère noire glisse comme une seule ligne. Le noir poli accroche les reflets et souligne chaque arête."
  },
  {
   "slug": "danseuse-1",
@@ -58,7 +62,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/danseuse-1.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/IMG_6844.jpg",
-  "ancienneUrl": "/sculptures/danseuse-1-2/"
+  "ancienneUrl": "/sculptures/danseuse-1-2/",
+  "texte": "Une jeune danseuse debout, jambes écartées, saisie au début d'un mouvement. Une figure élancée, travaillée d'après modèle."
  },
  {
   "slug": "fennec-papillon",
@@ -70,7 +75,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/fennec-papillon.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202401274270-1.jpg",
-  "ancienneUrl": "/sculptures/fennec-papillon/"
+  "ancienneUrl": "/sculptures/fennec-papillon/",
+  "texte": "Assis bien droit, oreilles grandes ouvertes comme des ailes, ce fennec doit son surnom à leur envergure. La queue enroulée devant lui ferme la composition."
  },
  {
   "slug": "grue-royale",
@@ -82,7 +88,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/grue-royale.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL2023010524817.jpg",
-  "ancienneUrl": "/sculptures/grue-royal/"
+  "ancienneUrl": "/sculptures/grue-royal/",
+  "texte": "Un buste de grue couronnée, saisi au plus près : l'aigrette dorée en éventail, le noir et le blanc de la tête, la caroncule rouge. Un portrait d'oiseau plus qu'un oiseau entier."
  },
  {
   "slug": "guepard-2",
@@ -94,7 +101,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/guepard-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152429-1.jpg",
-  "ancienneUrl": "/sculptures/guepard-2/"
+  "ancienneUrl": "/sculptures/guepard-2/",
+  "texte": "Le guépard s'étire dans une marche souple, tête basse et regard fixe. La patine fauve, tachetée par endroits, suit la longue ligne du dos jusqu'à la queue."
  },
  {
   "slug": "ibis-bis",
@@ -106,7 +114,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/ibis-bis.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL202405170082.jpg",
-  "ancienneUrl": "/sculptures/ibis-bis/"
+  "ancienneUrl": "/sculptures/ibis-bis/",
+  "texte": "Deuxième version de l'ibis rouge : le long bec courbe et les pattes graciles portent une silhouette d'un rouge franc, posée sur un socle sombre."
  },
  {
   "slug": "kangourou",
@@ -118,7 +127,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/kangourou.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/IMG_5872-002.jpg",
-  "ancienneUrl": "/sculptures/kangourou/"
+  "ancienneUrl": "/sculptures/kangourou/",
+  "texte": "Une femelle kangourou, le petit glissé dans sa poche, se dresse en alerte. La longue queue posée au sol équilibre la verticale du corps."
  },
  {
   "slug": "pelican",
@@ -130,7 +140,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/pelican.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152413.jpg",
-  "ancienneUrl": "/sculptures/pelican/"
+  "ancienneUrl": "/sculptures/pelican/",
+  "texte": "Posé sur un socle cylindrique, le pélican rentre la tête dans les épaules. Le bec immense, aux reflets clairs, contraste avec le corps bleu nuit."
  },
  {
   "slug": "toucan",
@@ -142,7 +153,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/toucan.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL202405170104.jpg",
-  "ancienneUrl": "/sculptures/toucan/"
+  "ancienneUrl": "/sculptures/toucan/",
+  "texte": "Le toucan, perché sur une branche, porte son bec orange comme un étendard. Les aplats noirs et blancs du plumage font éclater la couleur."
  },
  {
   "slug": "ecureuil-2",
@@ -154,7 +166,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/ecureuil-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152440.jpg",
-  "ancienneUrl": "/sculptures/ecureuil-2/"
+  "ancienneUrl": "/sculptures/ecureuil-2/",
+  "texte": "Deux écureuils dressés, queue en panache, se répondent du regard. Le roux de la patine et les ventres clairs rendent leur vivacité."
  },
  {
   "slug": "elephanteau",
@@ -166,7 +179,8 @@
   "annee": 2024,
   "image": "/images/oeuvres/elephanteau.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202401274278.jpg",
-  "ancienneUrl": "/sculptures/elephanteau/"
+  "ancienneUrl": "/sculptures/elephanteau/",
+  "texte": "Un jeune éléphant lancé en avant, oreilles décollées et trompe libre. Les plis de la peau sont réduits à quelques grands plans qui accrochent la lumière."
  },
  {
   "slug": "bonobo-ado",
@@ -178,7 +192,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/bonobo-ado.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022020816219.jpg",
-  "ancienneUrl": "/sculptures/bonobo-ado/"
+  "ancienneUrl": "/sculptures/bonobo-ado/",
+  "texte": "Assis, une jambe tendue qu'il tient de la main, le jeune bonobo semble absorbé dans un jeu. Une posture d'enfant, saisie sur le vif."
  },
  {
   "slug": "fennec-fripon",
@@ -190,7 +205,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/fennec-fripon.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821610.jpg",
-  "ancienneUrl": "/sculptures/fennec-fripon/"
+  "ancienneUrl": "/sculptures/fennec-fripon/",
+  "texte": "Lové sur lui-même, le fennec lève la tête et dresse ses immenses oreilles. Son air malicieux lui a donné son nom."
  },
  {
   "slug": "fennec-qui-dort",
@@ -202,7 +218,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/fennec-qui-dort.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821619.jpg",
-  "ancienneUrl": "/sculptures/fennec-qui-dort/"
+  "ancienneUrl": "/sculptures/fennec-qui-dort/",
+  "texte": "Roulé en boule dans sa queue, les yeux mi-clos, le fennec s'abandonne au sommeil. Une forme ronde et fermée, toute en douceur."
  },
  {
   "slug": "galago",
@@ -214,7 +231,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/galago.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022020816223.jpg",
-  "ancienneUrl": "/sculptures/galago/"
+  "ancienneUrl": "/sculptures/galago/",
+  "texte": "Le galago, petit primate nocturne d'Afrique, se tient assis, yeux immenses grands ouverts. La patine grise et les oreilles en cornet disent son monde de nuit."
  },
  {
   "slug": "lapins",
@@ -226,7 +244,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/lapins.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022051918081.jpg",
-  "ancienneUrl": "/sculptures/lapins/"
+  "ancienneUrl": "/sculptures/lapins/",
+  "texte": "Deux lapins, l'un dressé, l'autre tapi : un face-à-face simple où les oreilles et les dos ronds font toute la composition."
  },
  {
   "slug": "lionne-2",
@@ -238,7 +257,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/lionne-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022100623228-2.jpg",
-  "ancienneUrl": "/sculptures/lyonne/"
+  "ancienneUrl": "/sculptures/lyonne/",
+  "texte": "La lionne avance, tête basse, dans une marche d'approche. La patine fauve et la queue en arc accompagnent le mouvement."
  },
  {
   "slug": "loutre",
@@ -250,7 +270,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/loutre.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022051918048.jpg",
-  "ancienneUrl": "/sculptures/loutre/"
+  "ancienneUrl": "/sculptures/loutre/",
+  "texte": "Dressée sur ses pattes arrière, la loutre guette, le cou tendu. Le contraste entre le dos brun et la gorge claire allonge sa silhouette."
  },
  {
   "slug": "raton-laveur",
@@ -262,7 +283,8 @@
   "annee": 2023,
   "image": "/images/oeuvres/raton-laveur.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821578.jpg",
-  "ancienneUrl": "/sculptures/raton-laveur/"
+  "ancienneUrl": "/sculptures/raton-laveur/",
+  "texte": "Assis, les mains jointes devant lui, le raton laveur porte son masque comme un regard. Une pose presque humaine."
  },
  {
   "slug": "famille-bonobo",
@@ -274,7 +296,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/famille-bonobo.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267932.jpg",
-  "ancienneUrl": "/sculptures/famille-bonobo/"
+  "ancienneUrl": "/sculptures/famille-bonobo/",
+  "texte": "Mère, père et petits réunis : un groupe de bonobos en patine noire, où chaque figure garde sa propre attitude."
  },
  {
   "slug": "femelle-bonobo",
@@ -286,7 +309,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/femelle-bonobo.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251761.jpg",
-  "ancienneUrl": "/sculptures/femelle-bonobo/"
+  "ancienneUrl": "/sculptures/femelle-bonobo/",
+  "texte": "La femelle bonobo avance sur ses quatre membres, le corps ramassé. Le noir profond de la patine fait ressortir les grandes masses du dos et des épaules."
  },
  {
   "slug": "fennec",
@@ -298,7 +322,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/fennec.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/photos-de-mon-tel-012021-3549.jpg",
-  "ancienneUrl": "/sculptures/fennec/"
+  "ancienneUrl": "/sculptures/fennec/",
+  "texte": "Un fennec lové dans sa queue, la tête tournée vers nous, oreilles déployées. Les reflets bleutés de la patine soulignent les volumes."
  },
  {
   "slug": "guepard",
@@ -310,7 +335,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/guepard.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251770-Copie.jpg",
-  "ancienneUrl": "/sculptures/guepard/"
+  "ancienneUrl": "/sculptures/guepard/",
+  "texte": "Le guépard en marche, d'une seule ligne de la tête à la queue. La patine tachetée suggère la robe sans la dessiner."
  },
  {
   "slug": "maman-bonobo-avec-petit-sur-le-dos",
@@ -322,7 +348,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/maman-bonobo-avec-petit-sur-le-dos.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251793.jpg",
-  "ancienneUrl": "/sculptures/maman-bonobo-avec-petit-sur-le-dos/"
+  "ancienneUrl": "/sculptures/maman-bonobo-avec-petit-sur-le-dos/",
+  "texte": "Une mère bonobo avance à quatre pattes, son petit juché sur le dos. Le poids du corps, la confiance du petit : toute une relation en une seule forme."
  },
  {
   "slug": "mulot-sur-graine-de-pavot",
@@ -334,7 +361,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/mulot-sur-graine-de-pavot.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/PORRAS2463.jpg",
-  "ancienneUrl": "/sculptures/mulot-sur-graine-de-pavot/"
+  "ancienneUrl": "/sculptures/mulot-sur-graine-de-pavot/",
+  "texte": "Deux mulots juchés au sommet de capsules de pavot, sur de longues tiges souples. Une œuvre légère, presque végétale."
  },
  {
   "slug": "papa-bonobo",
@@ -346,7 +374,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/papa-bonobo.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267919.jpg",
-  "ancienneUrl": "/sculptures/papa-bonobo/"
+  "ancienneUrl": "/sculptures/papa-bonobo/",
+  "texte": "Assis, une main posée sur la tête, le bonobo semble perdu dans ses pensées. Une attitude de réflexion qui rapproche l'animal de nous."
  },
  {
   "slug": "photos-de-groupe",
@@ -358,7 +387,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/photos-de-groupe.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251792.jpg",
-  "ancienneUrl": "/sculptures/photos-de-groupe/"
+  "ancienneUrl": "/sculptures/photos-de-groupe/",
+  "texte": "Plusieurs sculptures réunies sur une même photo : mulot, ibis, bonobos, colibri. À remplacer ou à retirer du catalogue ?"
  },
  {
   "slug": "singe-mangabey-a-collier-blanc",
@@ -370,7 +400,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/singe-mangabey-a-collier-blanc.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267914.jpg",
-  "ancienneUrl": "/sculptures/singe-mangabeya-a-collier-blanc/"
+  "ancienneUrl": "/sculptures/singe-mangabeya-a-collier-blanc/",
+  "texte": "Un masque de mangabey à collier blanc, présenté sur une haute tige. Le visage seul, le regard et le collier clair, suffit à dire l'espèce."
  },
  {
   "slug": "singe-vervet",
@@ -382,7 +413,8 @@
   "annee": 2021,
   "image": "/images/oeuvres/singe-vervet.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267911.jpg",
-  "ancienneUrl": "/sculptures/singe-vervet/"
+  "ancienneUrl": "/sculptures/singe-vervet/",
+  "texte": "Deux masques de singe vervet, l'un clair, l'autre sombre, dressés sur des tiges. Le même visage décliné dans deux patines."
  },
  {
   "slug": "arbre-a-grenouilles",
@@ -394,7 +426,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/arbre-a-grenouilles.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_9372.jpg",
-  "ancienneUrl": "/sculptures/arbre-a-grenouilles/"
+  "ancienneUrl": "/sculptures/arbre-a-grenouilles/",
+  "texte": "De petites grenouilles vertes grimpent le long d'une branche feuillue. Une sculpture-paysage, à regarder de près."
  },
  {
   "slug": "chouette-harfang",
@@ -406,7 +439,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/chouette-harfang.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_1087-e1578237158916.jpg",
-  "ancienneUrl": "/sculptures/chouette-harfand/"
+  "ancienneUrl": "/sculptures/chouette-harfand/",
+  "texte": "Le harfang des neiges, plumage blanc moucheté de noir, tourne la tête vers nous. La patine imite le plumage sans le copier."
  },
  {
   "slug": "colibri",
@@ -418,7 +452,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/colibri.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38094-2.jpg",
-  "ancienneUrl": "/sculptures/colibri/"
+  "ancienneUrl": "/sculptures/colibri/",
+  "texte": "Le colibri en vol stationnaire, au bout d'une longue tige courbe. Tout est dans l'équilibre : l'oiseau semble ne rien peser."
  },
  {
   "slug": "girafon",
@@ -430,7 +465,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/girafon.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38086-2.jpg",
-  "ancienneUrl": "/sculptures/girafon/"
+  "ancienneUrl": "/sculptures/girafon/",
+  "texte": "Un jeune girafon sur ses longues pattes, le cou dressé. La patine ocre, ponctuée de taches, accompagne sa verticalité fragile."
  },
  {
   "slug": "hermine",
@@ -442,7 +478,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/hermine.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/09/COCKTAILAMBSDB202009156349.jpg",
-  "ancienneUrl": "/sculptures/hermine/"
+  "ancienneUrl": "/sculptures/hermine/",
+  "texte": "Assise, la queue enroulée au sol, l'hermine se redresse et observe. Une silhouette fine et vive, en patine brun-vert."
  },
  {
   "slug": "ibis-rouge",
@@ -454,7 +491,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/ibis-rouge.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS43825.jpg",
-  "ancienneUrl": "/sculptures/ibis-rouge/"
+  "ancienneUrl": "/sculptures/ibis-rouge/",
+  "texte": "L'ibis rouge, debout sur une patte, le bec courbe dirigé vers le sol. Un rouge franc, posé sur un socle sombre."
  },
  {
   "slug": "lemurien-sifaka-de-verreaux",
@@ -466,7 +504,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/lemurien-sifaka-de-verreaux.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/24976.jpg",
-  "ancienneUrl": "/sculptures/lemurien-sifaka-de-verreaux/"
+  "ancienneUrl": "/sculptures/lemurien-sifaka-de-verreaux/",
+  "texte": "Le sifaka de Verreaux, lémurien de Madagascar, se tient assis, le visage noir encadré de fourrure claire. Une espèce gravement menacée."
  },
  {
   "slug": "panda",
@@ -478,7 +517,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/panda.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019061338165.jpg",
-  "ancienneUrl": "/sculptures/panda/"
+  "ancienneUrl": "/sculptures/panda/",
+  "texte": "Assis, une tige de bambou entre les pattes, le panda présente son pelage noir et blanc en grands aplats. Une image tranquille et familière."
  },
  {
   "slug": "panthere-noire",
@@ -490,7 +530,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/panthere-noire.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/09/PORRAS2450.jpg",
-  "ancienneUrl": "/sculptures/panthere-noir/"
+  "ancienneUrl": "/sculptures/panthere-noir/",
+  "texte": "La panthère noire avance de face, tête basse, épaules roulantes. Un noir dense qui fait de l'animal une pure masse en mouvement."
  },
  {
   "slug": "petit-ours-blanc",
@@ -502,7 +543,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/petit-ours-blanc.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019091941216.jpg",
-  "ancienneUrl": "/sculptures/petit-ours-blanc/"
+  "ancienneUrl": "/sculptures/petit-ours-blanc/",
+  "texte": "Un ourson blanc, sur le dos, joue avec ses pattes. La patine bleutée et la posture renversée donnent toute sa tendresse au sujet."
  },
  {
   "slug": "petits-pandas",
@@ -514,7 +556,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/petits-pandas.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019061338178.jpg",
-  "ancienneUrl": "/sculptures/petit-pandas/"
+  "ancienneUrl": "/sculptures/petit-pandas/",
+  "texte": "Un jeune panda roulé sur le dos, pattes en l'air. Le jeu, l'équilibre instable, la rondeur du corps."
  },
  {
   "slug": "suricate-n3",
@@ -526,7 +569,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/suricate-n3.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS_clean-1-Copie-2.jpg",
-  "ancienneUrl": "/sculptures/suricate-n3/"
+  "ancienneUrl": "/sculptures/suricate-n3/",
+  "texte": "Le suricate dressé en sentinelle, le corps tout en hauteur. Une figure fine et verticale, presque une ligne."
  },
  {
   "slug": "tamarin-pinche",
@@ -538,7 +582,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/tamarin-pinche.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38102-1-1.jpg",
-  "ancienneUrl": "/sculptures/tamarin-pinche/"
+  "ancienneUrl": "/sculptures/tamarin-pinche/",
+  "texte": "Le tamarin pinché, reconnaissable à sa crête blanche, s'agrippe à une souche. Un petit singe d'Amérique du Sud, en danger critique."
  },
  {
   "slug": "tarsier-2",
@@ -550,7 +595,8 @@
   "annee": 2020,
   "image": "/images/oeuvres/tarsier-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_0808.jpg",
-  "ancienneUrl": "/sculptures/tarsier-2/"
+  "ancienneUrl": "/sculptures/tarsier-2/",
+  "texte": "Le tarsier agrippé à sa branche, ses immenses yeux ronds fixés sur nous. La patine orangée et la branche nue renforcent son étrangeté."
  },
  {
   "slug": "danseuse-africaine-3",
@@ -563,7 +609,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/danseuse-africaine-3.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6833.jpg",
-  "ancienneUrl": "/sculptures/danseuse-3/"
+  "ancienneUrl": "/sculptures/danseuse-3/",
+  "texte": "Vue de dos, la danseuse tient un objet dans sa main levée. La tension du corps et la cambrure font tout le sujet."
  },
  {
   "slug": "famille-manchot-empereur",
@@ -575,7 +622,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/famille-manchot-empereur.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Manchot.jpg",
-  "ancienneUrl": "/sculptures/famille-manchot-empereur/"
+  "ancienneUrl": "/sculptures/famille-manchot-empereur/",
+  "texte": "Deux adultes et leur petit, debout côte à côte. Le noir, le blanc et la touche dorée du cou sont traités en aplats nets.",
+  "dimensions": "14 × 30 × 39 cm"
  },
  {
   "slug": "famille-suricate",
@@ -587,7 +636,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/famille-suricate.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/02.jpg",
-  "ancienneUrl": "/sculptures/famille-suricate/"
+  "ancienneUrl": "/sculptures/famille-suricate/",
+  "texte": "Une famille de suricates, adultes dressés et petits à leurs pieds. Plusieurs vues et versions réunies sur la même photo.",
+  "dimensions": "20 × 37 × 40 cm"
  },
  {
   "slug": "faucon-au-sol",
@@ -599,7 +650,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/faucon-au-sol.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/05-11.jpg",
-  "ancienneUrl": "/sculptures/faucon-au-sol/"
+  "ancienneUrl": "/sculptures/faucon-au-sol/",
+  "texte": "Le faucon posé au sol, ailes repliées, bec crochu tourné vers le côté. Les plans tranchés du plumage donnent sa vigueur à l'oiseau."
  },
  {
   "slug": "faucon-en-vol",
@@ -611,7 +663,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/faucon-en-vol.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/grand-Faucon-1.jpg",
-  "ancienneUrl": "/sculptures/faucon-en-vol/"
+  "ancienneUrl": "/sculptures/faucon-en-vol/",
+  "texte": "Le faucon saisi au moment de l'envol, ailes déployées, sur une tige qui le tient comme en suspens."
  },
  {
   "slug": "femme-allongee",
@@ -623,7 +676,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/femme-allongee.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/chantal-porras-femme-allongée-1.jpg",
-  "ancienneUrl": "/sculptures/femme-allongee/"
+  "ancienneUrl": "/sculptures/femme-allongee/",
+  "texte": "Une femme allongée, appuyée sur le coude, le visage posé dans la main. Les formes sont recomposées en grands plans, à la manière cubiste."
  },
  {
   "slug": "grand-gorille",
@@ -635,7 +689,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/grand-gorille.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/gren1.jpg",
-  "ancienneUrl": "/sculptures/grand-gorille/"
+  "ancienneUrl": "/sculptures/grand-gorille/",
+  "texte": "Un grand gorille en marche, appuyé sur ses poings. Masse, puissance et calme : l'une des pièces majeures du bestiaire.",
+  "dimensions": "23 × 45 × 46 cm"
  },
  {
   "slug": "grand-impala",
@@ -647,7 +703,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/grand-impala.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/photographe-gorille.jpg",
-  "ancienneUrl": "/sculptures/grand-impala/"
+  "ancienneUrl": "/sculptures/grand-impala/",
+  "texte": "Un impala de grande taille, debout, oreilles dressées. La patine sombre souligne la finesse des pattes et la courbe du cou.",
+  "dimensions": "45 × 100 × 124 cm"
  },
  {
   "slug": "grand-taureau",
@@ -659,7 +717,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/grand-taureau.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/21-1.jpg",
-  "ancienneUrl": "/sculptures/grand-taureau/"
+  "ancienneUrl": "/sculptures/grand-taureau/",
+  "texte": "Le taureau campé, tête basse, cornes en avant. La photo réunit plusieurs versions, dont une en métal poli miroir."
  },
  {
   "slug": "hippopotame",
@@ -671,7 +730,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/hippopotame.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/07.jpg",
-  "ancienneUrl": "/sculptures/hippopotame/"
+  "ancienneUrl": "/sculptures/hippopotame/",
+  "texte": "L'hippopotame, massif et paisible, réduit à quelques grands volumes arrondis. Plusieurs versions et patines réunies sur la photo.",
+  "dimensions": "19 × 28 × 50 cm"
  },
  {
   "slug": "homme-cubiste",
@@ -683,7 +744,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/homme-cubiste.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/chantal-porras-homme-en-boule-1.jpg",
-  "ancienneUrl": "/sculptures/homme-cubiste/"
+  "ancienneUrl": "/sculptures/homme-cubiste/",
+  "texte": "Un homme replié sur lui-même, les bras autour des genoux. Le corps devient un assemblage de facettes nettes."
  },
  {
   "slug": "impala",
@@ -695,7 +757,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/impala.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/impala.psd.jpg",
-  "ancienneUrl": "/sculptures/impala/"
+  "ancienneUrl": "/sculptures/impala/",
+  "texte": "Un jeune impala, oreilles en alerte, sur ses pattes fines. La patine fauve suit les lignes nettes du corps.",
+  "dimensions": "14 × 34 × 35 cm"
  },
  {
   "slug": "jeune-femme-africaine",
@@ -709,7 +773,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/jeune-femme-africaine.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6737.jpg",
-  "ancienneUrl": "/sculptures/jeune-femme-africaine/"
+  "ancienneUrl": "/sculptures/jeune-femme-africaine/",
+  "texte": "Le buste d'une jeune femme, cou paré de colliers fins, regard porté au loin. Un portrait sobre et attentif."
  },
  {
   "slug": "jeune-fille-africaine-en-pied",
@@ -721,7 +786,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/jeune-fille-africaine-en-pied.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Chantal-porras-expo-galerie-2.jpg",
-  "ancienneUrl": "/sculptures/jeune-fille-africaine-en-pied/"
+  "ancienneUrl": "/sculptures/jeune-fille-africaine-en-pied/",
+  "texte": "Photo d'exposition : la jeune fille en pied apparaît au milieu d'autres œuvres. Une photo isolée de la sculpture serait préférable."
  },
  {
   "slug": "jeune-fille-aux-colliers",
@@ -734,7 +800,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/jeune-fille-aux-colliers.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6696.jpg",
-  "ancienneUrl": "/sculptures/jeune-fille-aux-colliers-2/"
+  "ancienneUrl": "/sculptures/jeune-fille-aux-colliers-2/",
+  "texte": "Buste d'une jeune fille aux nombreux colliers, le visage grave et frontal. La parure dit une culture, le regard une personne."
  },
  {
   "slug": "kiwi",
@@ -746,7 +813,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/kiwi.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/16.jpg",
-  "ancienneUrl": "/sculptures/kiwi/"
+  "ancienneUrl": "/sculptures/kiwi/",
+  "texte": "Le kiwi de Nouvelle-Zélande, oiseau sans ailes au long bec, présenté sous plusieurs angles. Une forme ronde et compacte.",
+  "dimensions": "12 × 22 × 25 cm"
  },
  {
   "slug": "koala",
@@ -758,7 +827,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/koala.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/15.jpg",
-  "ancienneUrl": "/sculptures/koala/"
+  "ancienneUrl": "/sculptures/koala/",
+  "texte": "Le koala agrippé ou assis, oreilles rondes et nez large. Plusieurs postures réunies sur la photo.",
+  "dimensions": "19 × 26 × 31 cm"
  },
  {
   "slug": "lionne",
@@ -770,7 +841,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/lionne.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/10.jpg",
-  "ancienneUrl": "/sculptures/lionne/"
+  "ancienneUrl": "/sculptures/lionne/",
+  "texte": "Plusieurs lionnes en marche, tête basse, épaules en avant. Un même mouvement décliné en plusieurs tailles et patines.",
+  "dimensions": "10 × 15 × 40 cm"
  },
  {
   "slug": "lutteur-nouba",
@@ -783,7 +856,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/lutteur-nouba.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/AAA-140.jpg",
-  "ancienneUrl": "/sculptures/lutteur-nouba/"
+  "ancienneUrl": "/sculptures/lutteur-nouba/",
+  "texte": "Le portrait d'un lutteur nouba, crâne rasé, regard droit. La patine verte et cuivrée renforce la présence du visage."
  },
  {
   "slug": "ours-blanc",
@@ -795,7 +869,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/ours-blanc.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/23.jpg",
-  "ancienneUrl": "/sculptures/elephant/"
+  "ancienneUrl": "/sculptures/elephant/",
+  "texte": "L'ours blanc en marche, tête balancée, dans une patine blanc bleuté. La photo montre plusieurs versions et points de vue."
  },
  {
   "slug": "panda-roux",
@@ -807,7 +882,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/panda-roux.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Panda-roux.jpg",
-  "ancienneUrl": "/sculptures/panda-roux/"
+  "ancienneUrl": "/sculptures/panda-roux/",
+  "texte": "Le panda roux, queue annelée, se faufile au ras du sol. Une espèce menacée de l'Himalaya, au pelage roux et blanc.",
+  "dimensions": "18 × 19 × 37 cm"
  },
  {
   "slug": "paresseux",
@@ -819,7 +896,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/paresseux.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Paresseux.jpg",
-  "ancienneUrl": "/sculptures/paresseux/"
+  "ancienneUrl": "/sculptures/paresseux/",
+  "texte": "Le paresseux suspendu à sa branche, la tête tournée vers nous. Une sculpture qui joue de la lenteur et de l'accroche.",
+  "dimensions": "14 × 51 × 55 cm"
  },
  {
   "slug": "petit-taureau",
@@ -831,7 +910,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/petit-taureau.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/22-1.jpg",
-  "ancienneUrl": "/sculptures/petit-taureau/"
+  "ancienneUrl": "/sculptures/petit-taureau/",
+  "texte": "Un taureau en patine noire, cornes larges, campé sur ses pattes. Plusieurs versions et angles sur la photo."
  },
  {
   "slug": "phacochere",
@@ -843,7 +923,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/phacochere.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/09.jpg",
-  "ancienneUrl": "/sculptures/phacochere/"
+  "ancienneUrl": "/sculptures/phacochere/",
+  "texte": "Le phacochère lancé au trot, queue dressée en antenne. Une silhouette nerveuse, présentée sous plusieurs angles.",
+  "dimensions": "12 × 29 × 40 cm"
  },
  {
   "slug": "pogona",
@@ -855,7 +937,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/pogona.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/17-1.jpg",
-  "ancienneUrl": "/sculptures/pogona-2/"
+  "ancienneUrl": "/sculptures/pogona-2/",
+  "texte": "Le pogona, lézard d'Australie, se dresse sur ses pattes, la queue étirée. Les écailles sont suggérées par la patine plus que gravées."
  },
  {
   "slug": "portrait-africain-1",
@@ -868,7 +951,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/portrait-africain-1.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6797.jpg",
-  "ancienneUrl": "/sculptures/portait-africain-1/"
+  "ancienneUrl": "/sculptures/portait-africain-1/",
+  "texte": "Un buste d'homme, crâne rasé, regard direct. La patine sombre et les plans du visage disent la force tranquille du modèle."
  },
  {
   "slug": "portrait-africain-2",
@@ -881,7 +965,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/portrait-africain-2.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6745.jpg",
-  "ancienneUrl": "/sculptures/portrait-africain-2/"
+  "ancienneUrl": "/sculptures/portrait-africain-2/",
+  "texte": "Buste d'un jeune homme au léger sourire, cheveux courts. Un portrait chaleureux, au modelé très fin."
  },
  {
   "slug": "portrait-africain-tete-penchee",
@@ -894,7 +979,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/portrait-africain-tete-penchee.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6729.jpg",
-  "ancienneUrl": "/sculptures/portrait-africain-tete-penchee/"
+  "ancienneUrl": "/sculptures/portrait-africain-tete-penchee/",
+  "texte": "Un jeune homme, tête légèrement inclinée, regard baissé. Une version plus intérieure du portrait."
  },
  {
   "slug": "rhinoceros",
@@ -906,7 +992,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/rhinoceros.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/11-1.jpg",
-  "ancienneUrl": "/sculptures/rhinoceros/"
+  "ancienneUrl": "/sculptures/rhinoceros/",
+  "texte": "Le rhinocéros, massif et immobile, la corne en avant. Plusieurs versions et patines réunies sur la photo.",
+  "dimensions": "19 × 28 × 50 cm"
  },
  {
   "slug": "rhinopitheque",
@@ -918,7 +1006,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/rhinopitheque.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/19.jpg",
-  "ancienneUrl": "/sculptures/rhinopitheque/"
+  "ancienneUrl": "/sculptures/rhinopitheque/",
+  "texte": "Une mère rhinopithèque serre son petit contre elle, la queue enroulée. Le visage bleu et la fourrure dorée de ce singe de Chine sont rendus par la patine.",
+  "dimensions": "26 × 28 × 38 cm"
  },
  {
   "slug": "suricate",
@@ -930,7 +1020,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/suricate.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/gren2.jpg",
-  "ancienneUrl": "/sculptures/suricate/"
+  "ancienneUrl": "/sculptures/suricate/",
+  "texte": "Le suricate dressé, vigilant, sur un socle rouillé. La photo montre plusieurs vues de la même pièce."
  },
  {
   "slug": "tamanoir",
@@ -942,7 +1033,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/tamanoir.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/14-1.jpg",
-  "ancienneUrl": "/sculptures/tamanoir/"
+  "ancienneUrl": "/sculptures/tamanoir/",
+  "texte": "Le tamanoir avance, long museau au ras du sol, queue en panache. Une silhouette étirée, sous plusieurs angles.",
+  "dimensions": "26 × 34 × 55 cm"
  },
  {
   "slug": "tarsiers",
@@ -954,7 +1047,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/tarsiers.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/tarsiers.jpg",
-  "ancienneUrl": "/sculptures/tarsiers/"
+  "ancienneUrl": "/sculptures/tarsiers/",
+  "texte": "Plusieurs tarsiers accrochés à une même branche verticale. Leurs grands yeux ronds rythment la hauteur de la sculpture.",
+  "dimensions": "12 × 16 × 52 cm"
  },
  {
   "slug": "tatou",
@@ -966,7 +1061,9 @@
   "annee": 2019,
   "image": "/images/oeuvres/tatou.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/13.jpg",
-  "ancienneUrl": "/sculptures/tatou/"
+  "ancienneUrl": "/sculptures/tatou/",
+  "texte": "Le tatou, cuirasse articulée et museau pointu, présenté sous plusieurs angles. Les bandes de la carapace dessinent son volume.",
+  "dimensions": "9 × 13 × 33 cm"
  },
  {
   "slug": "ecureuil",
@@ -978,7 +1075,8 @@
   "annee": 2019,
   "image": "/images/oeuvres/ecureuil.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/Ecureuil.jpg",
-  "ancienneUrl": "/sculptures/ecureuil/"
+  "ancienneUrl": "/sculptures/ecureuil/",
+  "texte": "Une série d'écureuils dans différentes poses et patines, queue en panache. Plusieurs pièces réunies sur la photo."
  },
  {
   "slug": "elephant",
@@ -990,6 +1088,7 @@
   "annee": 2019,
   "image": "/images/oeuvres/elephant.jpg",
   "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/03-11.jpg",
-  "ancienneUrl": "/sculptures/elephant-2/"
+  "ancienneUrl": "/sculptures/elephant-2/",
+  "texte": "Des éléphants en marche, en plusieurs tailles et patines. La photo réunit plusieurs versions du même sujet."
  }
 ]

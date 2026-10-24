@@ -26,10 +26,11 @@ const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
     <div class="fiche-texte">
       <a href={`/collections/${collection.id}/`} class="surtitre">{collection.nom}</a>
       <h1>{oeuvre.titre}</h1>
+      {oeuvre.texte && <p class="texte">{oeuvre.texte}</p>}
       <dl>
         <div><dt>Année</dt><dd>{oeuvre.annee}</dd></div>
-        <div><dt>Matériau</dt><dd>[À PRÉCISER]</dd></div>
-        <div><dt>Dimensions</dt><dd>[À PRÉCISER]</dd></div>
+        {oeuvre.materiau && <div><dt>Matériau</dt><dd>{oeuvre.materiau}</dd></div>}
+        {oeuvre.dimensions && <div><dt>Dimensions</dt><dd>{oeuvre.dimensions}</dd></div>}
       </dl>
       <a href={`mailto:${site.email}?subject=${sujet}`} class="lien-souligne">Se renseigner sur cette œuvre</a>
       <nav class="voisins" aria-label="Œuvres voisines">
@@ -55,6 +56,7 @@ const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
   .fiche-visuel { margin: 0; flex: 999 1 520px; min-width: 0; max-width: 760px; }
   .fiche-texte { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
   h1 { font-size: clamp(40px, 5vw, 56px); line-height: 1.05; font-style: italic; }
+  .texte { margin: 0; color: var(--texte-doux); font-size: 17px; }
   dl { margin: 0; width: 100%; border-top: 1px solid var(--filet); }
   dl div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--filet); font-size: 14px; }
   dt { color: var(--texte-discret); }

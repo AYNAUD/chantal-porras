@@ -12,6 +12,7 @@ const galeries = [
   <section class="conteneur section entete-atelier">
     <p class="surtitre">Nîmes, Gard</p>
     <h1>L'atelier</h1>
+    <p class="intro">Tout commence dans l'atelier de Nîmes, par la terre. Chantal Porras y modèle chaque sujet d'après ses observations, puis le confie à la fonderie pour le passage au bronze.</p>
   </section>
   {galeries.map((g) => {
     const liste = photos.filter((p) => p.galerie === g.id);
@@ -23,7 +24,10 @@ const galeries = [
         </div>
         <div class="mosaique">
           {liste.map((p, i) => (
-            <Visuel src={p.image} alt={`${g.titre}, photo ${i + 1}`} ratio={i % 3 === 0 ? '3 / 4' : '4 / 3'} />
+            <figure>
+              <Visuel src={p.image} alt={p.legende} ratio={i % 3 === 0 ? '3 / 4' : '4 / 3'} />
+              {(i === 0 || liste[i - 1].legende !== p.legende) && <figcaption>{p.legende}</figcaption>}
+            </figure>
           ))}
         </div>
       </section>
@@ -36,5 +40,7 @@ const galeries = [
   .entete-atelier h1 { font-size: clamp(42px, 6vw, 64px); margin-top: 12px; }
   .galerie { padding-bottom: 96px; }
   .mosaique { columns: 3 260px; column-gap: 24px; }
-  .mosaique > :global(*) { break-inside: avoid; margin-bottom: 24px; }
+  .entete-atelier .intro { max-width: 620px; color: var(--texte-doux); margin: 20px 0 0; }
+  .mosaique figure { break-inside: avoid; margin: 0 0 32px; }
+  .mosaique figcaption { margin-top: 10px; font-size: 14px; color: var(--texte-discret); }
 </style>
