@@ -1,0 +1,38 @@
+---
+// Affiche la photo si elle est présente dans public/, sinon un emplacement titré.
+import fs from 'node:fs';
+import path from 'node:path';
+
+interface Props {
+  src: string;
+  alt: string;
+  ratio?: string;
+  chargement?: 'lazy' | 'eager';
+}
+
+const { src, alt, ratio = '4 / 5', chargement = 'lazy' } = Astro.props;
+const present = fs.existsSync(path.join(process.cwd(), 'public', src));
+---
+{present ? (
+  <img src={src} alt={alt} loading={chargement} decoding="async" style={`aspect-ratio: ${ratio}; object-fit: cover; width: 100%;`} />
+) : (
+  <div class="emplacement" role="img" aria-label={alt} style={`aspect-ratio: ${ratio};`}>
+    <span>Photo · {alt}</span>
+  </div>
+)}
+
+<style>
+  .emplacement {
+    width: 100%;
+    background: var(--emplacement);
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+  }
+  .emplacement span {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--texte-discret);
+  }
+</style>

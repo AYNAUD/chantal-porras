@@ -1,0 +1,13 @@
+{
+  "nom": "Chantal Porras",
+  "metier": "Sculptrice",
+  "ville": "Nîmes, Gard",
+  "email": "chantalporras@orange.fr",
+  "telephones": ["06 74 82 04 13", "06 84 54 71 16"],
+  "reseaux": [],
+  "collections": [
+    { "id": "bestiaire", "nom": "Bestiaire", "description": "Sculptures animalières, souvent des espèces menacées, épurées en plans et arêtes vives." },
+    { "id": "figures", "nom": "Portraits et Afrique", "description": "Bustes, portraits et figures en pied, du travail académique aux portraits africains." },
+    { "id": "cubisme", "nom": "Cubisme", "description": "Le corps recomposé en volumes francs." }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "chantal-porras-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "images": "node scripts/recuperer-images.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.18.2"
+  }
+}

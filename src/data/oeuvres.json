@@ -1,0 +1,995 @@
+[
+ {
+  "slug": "ara",
+  "titre": "Ara",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2025,
+  "image": "/images/oeuvres/ara.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/CHANTALPORRAS202504165149.jpg",
+  "ancienneUrl": "/sculptures/ara/"
+ },
+ {
+  "slug": "grizzly",
+  "titre": "Grizzly",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2025,
+  "image": "/images/oeuvres/grizzly.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/CHANTALPORRAS202504165123.jpg",
+  "ancienneUrl": "/sculptures/grizzy/"
+ },
+ {
+  "slug": "oryx",
+  "titre": "Oryx",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2025,
+  "image": "/images/oeuvres/oryx.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/Capture-plein-ecran-27042025-110920.bmp.jpg",
+  "ancienneUrl": "/sculptures/oryx/"
+ },
+ {
+  "slug": "panthere-noire-2",
+  "titre": "Panthère noire 2",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2025,
+  "image": "/images/oeuvres/panthere-noire-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2025/04/Capture-plein-ecran-27042025-111433.bmp.jpg",
+  "ancienneUrl": "/sculptures/panthere-noir-2/"
+ },
+ {
+  "slug": "danseuse-1",
+  "titre": "Danseuse 1",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Travail académique"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/danseuse-1.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/IMG_6844.jpg",
+  "ancienneUrl": "/sculptures/danseuse-1-2/"
+ },
+ {
+  "slug": "fennec-papillon",
+  "titre": "Fennec (Papillon)",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/fennec-papillon.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202401274270-1.jpg",
+  "ancienneUrl": "/sculptures/fennec-papillon/"
+ },
+ {
+  "slug": "grue-royale",
+  "titre": "Grue royale",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/grue-royale.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL2023010524817.jpg",
+  "ancienneUrl": "/sculptures/grue-royal/"
+ },
+ {
+  "slug": "guepard-2",
+  "titre": "Guépard",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/guepard-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152429-1.jpg",
+  "ancienneUrl": "/sculptures/guepard-2/"
+ },
+ {
+  "slug": "ibis-bis",
+  "titre": "Ibis bis",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/ibis-bis.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL202405170082.jpg",
+  "ancienneUrl": "/sculptures/ibis-bis/"
+ },
+ {
+  "slug": "kangourou",
+  "titre": "Kangourou",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/kangourou.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/IMG_5872-002.jpg",
+  "ancienneUrl": "/sculptures/kangourou/"
+ },
+ {
+  "slug": "pelican",
+  "titre": "Pélican",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/pelican.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152413.jpg",
+  "ancienneUrl": "/sculptures/pelican/"
+ },
+ {
+  "slug": "toucan",
+  "titre": "Toucan",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/toucan.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/06/CHANTAL202405170104.jpg",
+  "ancienneUrl": "/sculptures/toucan/"
+ },
+ {
+  "slug": "ecureuil-2",
+  "titre": "Écureuil",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/ecureuil-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202308152440.jpg",
+  "ancienneUrl": "/sculptures/ecureuil-2/"
+ },
+ {
+  "slug": "elephanteau",
+  "titre": "Éléphanteau",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2024,
+  "image": "/images/oeuvres/elephanteau.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2024/02/CHANTAL202401274278.jpg",
+  "ancienneUrl": "/sculptures/elephanteau/"
+ },
+ {
+  "slug": "bonobo-ado",
+  "titre": "Bonobo ado",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/bonobo-ado.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022020816219.jpg",
+  "ancienneUrl": "/sculptures/bonobo-ado/"
+ },
+ {
+  "slug": "fennec-fripon",
+  "titre": "Fennec fripon",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/fennec-fripon.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821610.jpg",
+  "ancienneUrl": "/sculptures/fennec-fripon/"
+ },
+ {
+  "slug": "fennec-qui-dort",
+  "titre": "Fennec qui dort",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/fennec-qui-dort.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821619.jpg",
+  "ancienneUrl": "/sculptures/fennec-qui-dort/"
+ },
+ {
+  "slug": "galago",
+  "titre": "Galago",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/galago.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022020816223.jpg",
+  "ancienneUrl": "/sculptures/galago/"
+ },
+ {
+  "slug": "lapins",
+  "titre": "Lapins",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/lapins.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022051918081.jpg",
+  "ancienneUrl": "/sculptures/lapins/"
+ },
+ {
+  "slug": "lionne-2",
+  "titre": "Lionne",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/lionne-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022100623228-2.jpg",
+  "ancienneUrl": "/sculptures/lyonne/"
+ },
+ {
+  "slug": "loutre",
+  "titre": "Loutre",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/loutre.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTAL2022051918048.jpg",
+  "ancienneUrl": "/sculptures/loutre/"
+ },
+ {
+  "slug": "raton-laveur",
+  "titre": "Raton laveur",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2023,
+  "image": "/images/oeuvres/raton-laveur.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2023/01/CHANTALPORRAS2022080821578.jpg",
+  "ancienneUrl": "/sculptures/raton-laveur/"
+ },
+ {
+  "slug": "famille-bonobo",
+  "titre": "Famille Bonobo",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/famille-bonobo.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267932.jpg",
+  "ancienneUrl": "/sculptures/famille-bonobo/"
+ },
+ {
+  "slug": "femelle-bonobo",
+  "titre": "Femelle bonobo",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/femelle-bonobo.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251761.jpg",
+  "ancienneUrl": "/sculptures/femelle-bonobo/"
+ },
+ {
+  "slug": "fennec",
+  "titre": "Fennec",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/fennec.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/photos-de-mon-tel-012021-3549.jpg",
+  "ancienneUrl": "/sculptures/fennec/"
+ },
+ {
+  "slug": "guepard",
+  "titre": "Guépard",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/guepard.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251770-Copie.jpg",
+  "ancienneUrl": "/sculptures/guepard/"
+ },
+ {
+  "slug": "maman-bonobo-avec-petit-sur-le-dos",
+  "titre": "Maman Bonobo avec petit sur le dos",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/maman-bonobo-avec-petit-sur-le-dos.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251793.jpg",
+  "ancienneUrl": "/sculptures/maman-bonobo-avec-petit-sur-le-dos/"
+ },
+ {
+  "slug": "mulot-sur-graine-de-pavot",
+  "titre": "Mulot sur graine de pavot",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/mulot-sur-graine-de-pavot.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/PORRAS2463.jpg",
+  "ancienneUrl": "/sculptures/mulot-sur-graine-de-pavot/"
+ },
+ {
+  "slug": "papa-bonobo",
+  "titre": "Papa Bonobo",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/papa-bonobo.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267919.jpg",
+  "ancienneUrl": "/sculptures/papa-bonobo/"
+ },
+ {
+  "slug": "photos-de-groupe",
+  "titre": "Photos de groupe",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/photos-de-groupe.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/02/CHANTAL202011251792.jpg",
+  "ancienneUrl": "/sculptures/photos-de-groupe/"
+ },
+ {
+  "slug": "singe-mangabey-a-collier-blanc",
+  "titre": "Singe mangabey à collier blanc",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/singe-mangabey-a-collier-blanc.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267914.jpg",
+  "ancienneUrl": "/sculptures/singe-mangabeya-a-collier-blanc/"
+ },
+ {
+  "slug": "singe-vervet",
+  "titre": "Singe vervet",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2021,
+  "image": "/images/oeuvres/singe-vervet.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2021/06/CHANTALPORRAS202105267911.jpg",
+  "ancienneUrl": "/sculptures/singe-vervet/"
+ },
+ {
+  "slug": "arbre-a-grenouilles",
+  "titre": "Arbre à grenouilles",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/arbre-a-grenouilles.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_9372.jpg",
+  "ancienneUrl": "/sculptures/arbre-a-grenouilles/"
+ },
+ {
+  "slug": "chouette-harfang",
+  "titre": "Chouette harfang",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/chouette-harfang.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_1087-e1578237158916.jpg",
+  "ancienneUrl": "/sculptures/chouette-harfand/"
+ },
+ {
+  "slug": "colibri",
+  "titre": "Colibri",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/colibri.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38094-2.jpg",
+  "ancienneUrl": "/sculptures/colibri/"
+ },
+ {
+  "slug": "girafon",
+  "titre": "Girafon",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/girafon.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38086-2.jpg",
+  "ancienneUrl": "/sculptures/girafon/"
+ },
+ {
+  "slug": "hermine",
+  "titre": "Hermine",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/hermine.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/09/COCKTAILAMBSDB202009156349.jpg",
+  "ancienneUrl": "/sculptures/hermine/"
+ },
+ {
+  "slug": "ibis-rouge",
+  "titre": "Ibis rouge",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/ibis-rouge.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS43825.jpg",
+  "ancienneUrl": "/sculptures/ibis-rouge/"
+ },
+ {
+  "slug": "lemurien-sifaka-de-verreaux",
+  "titre": "Lémurien, Sifaka de Verreaux",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/lemurien-sifaka-de-verreaux.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/24976.jpg",
+  "ancienneUrl": "/sculptures/lemurien-sifaka-de-verreaux/"
+ },
+ {
+  "slug": "panda",
+  "titre": "Panda",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/panda.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019061338165.jpg",
+  "ancienneUrl": "/sculptures/panda/"
+ },
+ {
+  "slug": "panthere-noire",
+  "titre": "Panthère noire",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/panthere-noire.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/09/PORRAS2450.jpg",
+  "ancienneUrl": "/sculptures/panthere-noir/"
+ },
+ {
+  "slug": "petit-ours-blanc",
+  "titre": "Petit ours blanc",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/petit-ours-blanc.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019091941216.jpg",
+  "ancienneUrl": "/sculptures/petit-ours-blanc/"
+ },
+ {
+  "slug": "petits-pandas",
+  "titre": "Petits pandas",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/petits-pandas.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS2019061338178.jpg",
+  "ancienneUrl": "/sculptures/petit-pandas/"
+ },
+ {
+  "slug": "suricate-n3",
+  "titre": "Suricate n°3",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/suricate-n3.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS_clean-1-Copie-2.jpg",
+  "ancienneUrl": "/sculptures/suricate-n3/"
+ },
+ {
+  "slug": "tamarin-pinche",
+  "titre": "Tamarin pinché",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/tamarin-pinche.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/CHANTALPORRAS38102-1-1.jpg",
+  "ancienneUrl": "/sculptures/tamarin-pinche/"
+ },
+ {
+  "slug": "tarsier-2",
+  "titre": "Tarsier 2",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2020,
+  "image": "/images/oeuvres/tarsier-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2020/01/IMG_0808.jpg",
+  "ancienneUrl": "/sculptures/tarsier-2/"
+ },
+ {
+  "slug": "danseuse-africaine-3",
+  "titre": "Danseuse africaine 3",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Travail académique"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/danseuse-africaine-3.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6833.jpg",
+  "ancienneUrl": "/sculptures/danseuse-3/"
+ },
+ {
+  "slug": "famille-manchot-empereur",
+  "titre": "Famille Manchot Empereur",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/famille-manchot-empereur.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Manchot.jpg",
+  "ancienneUrl": "/sculptures/famille-manchot-empereur/"
+ },
+ {
+  "slug": "famille-suricate",
+  "titre": "Famille Suricate",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/famille-suricate.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/02.jpg",
+  "ancienneUrl": "/sculptures/famille-suricate/"
+ },
+ {
+  "slug": "faucon-au-sol",
+  "titre": "Faucon au sol",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/faucon-au-sol.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/05-11.jpg",
+  "ancienneUrl": "/sculptures/faucon-au-sol/"
+ },
+ {
+  "slug": "faucon-en-vol",
+  "titre": "Faucon en vol",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/faucon-en-vol.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/grand-Faucon-1.jpg",
+  "ancienneUrl": "/sculptures/faucon-en-vol/"
+ },
+ {
+  "slug": "femme-allongee",
+  "titre": "Femme allongée",
+  "collection": "cubisme",
+  "categories": [
+   "Cubisme"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/femme-allongee.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/chantal-porras-femme-allongée-1.jpg",
+  "ancienneUrl": "/sculptures/femme-allongee/"
+ },
+ {
+  "slug": "grand-gorille",
+  "titre": "Grand Gorille",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/grand-gorille.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/gren1.jpg",
+  "ancienneUrl": "/sculptures/grand-gorille/"
+ },
+ {
+  "slug": "grand-impala",
+  "titre": "Grand Impala",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/grand-impala.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/photographe-gorille.jpg",
+  "ancienneUrl": "/sculptures/grand-impala/"
+ },
+ {
+  "slug": "grand-taureau",
+  "titre": "Grand taureau",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/grand-taureau.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/21-1.jpg",
+  "ancienneUrl": "/sculptures/grand-taureau/"
+ },
+ {
+  "slug": "hippopotame",
+  "titre": "Hippopotame",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/hippopotame.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/07.jpg",
+  "ancienneUrl": "/sculptures/hippopotame/"
+ },
+ {
+  "slug": "homme-cubiste",
+  "titre": "Homme cubiste",
+  "collection": "cubisme",
+  "categories": [
+   "Cubisme"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/homme-cubiste.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/chantal-porras-homme-en-boule-1.jpg",
+  "ancienneUrl": "/sculptures/homme-cubiste/"
+ },
+ {
+  "slug": "impala",
+  "titre": "Impala",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/impala.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/impala.psd.jpg",
+  "ancienneUrl": "/sculptures/impala/"
+ },
+ {
+  "slug": "jeune-femme-africaine",
+  "titre": "Jeune femme africaine",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait",
+   "Travail académique"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/jeune-femme-africaine.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6737.jpg",
+  "ancienneUrl": "/sculptures/jeune-femme-africaine/"
+ },
+ {
+  "slug": "jeune-fille-africaine-en-pied",
+  "titre": "Jeune fille africaine (en pied)",
+  "collection": "figures",
+  "categories": [
+   "Afrique"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/jeune-fille-africaine-en-pied.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Chantal-porras-expo-galerie-2.jpg",
+  "ancienneUrl": "/sculptures/jeune-fille-africaine-en-pied/"
+ },
+ {
+  "slug": "jeune-fille-aux-colliers",
+  "titre": "Jeune fille aux colliers",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/jeune-fille-aux-colliers.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6696.jpg",
+  "ancienneUrl": "/sculptures/jeune-fille-aux-colliers-2/"
+ },
+ {
+  "slug": "kiwi",
+  "titre": "Kiwi",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/kiwi.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/16.jpg",
+  "ancienneUrl": "/sculptures/kiwi/"
+ },
+ {
+  "slug": "koala",
+  "titre": "Koala",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/koala.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/15.jpg",
+  "ancienneUrl": "/sculptures/koala/"
+ },
+ {
+  "slug": "lionne",
+  "titre": "Lionne",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/lionne.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/10.jpg",
+  "ancienneUrl": "/sculptures/lionne/"
+ },
+ {
+  "slug": "lutteur-nouba",
+  "titre": "Lutteur Nouba",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/lutteur-nouba.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/AAA-140.jpg",
+  "ancienneUrl": "/sculptures/lutteur-nouba/"
+ },
+ {
+  "slug": "ours-blanc",
+  "titre": "Ours blanc",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/ours-blanc.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/23.jpg",
+  "ancienneUrl": "/sculptures/elephant/"
+ },
+ {
+  "slug": "panda-roux",
+  "titre": "Panda roux",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/panda-roux.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Panda-roux.jpg",
+  "ancienneUrl": "/sculptures/panda-roux/"
+ },
+ {
+  "slug": "paresseux",
+  "titre": "Paresseux",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/paresseux.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/Paresseux.jpg",
+  "ancienneUrl": "/sculptures/paresseux/"
+ },
+ {
+  "slug": "petit-taureau",
+  "titre": "Petit Taureau",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/petit-taureau.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/22-1.jpg",
+  "ancienneUrl": "/sculptures/petit-taureau/"
+ },
+ {
+  "slug": "phacochere",
+  "titre": "Phacochère",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/phacochere.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/09.jpg",
+  "ancienneUrl": "/sculptures/phacochere/"
+ },
+ {
+  "slug": "pogona",
+  "titre": "Pogona",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/pogona.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/17-1.jpg",
+  "ancienneUrl": "/sculptures/pogona-2/"
+ },
+ {
+  "slug": "portrait-africain-1",
+  "titre": "Portrait africain 1",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/portrait-africain-1.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6797.jpg",
+  "ancienneUrl": "/sculptures/portait-africain-1/"
+ },
+ {
+  "slug": "portrait-africain-2",
+  "titre": "Portrait africain 2",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/portrait-africain-2.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6745.jpg",
+  "ancienneUrl": "/sculptures/portrait-africain-2/"
+ },
+ {
+  "slug": "portrait-africain-tete-penchee",
+  "titre": "Portrait africain tête penchée",
+  "collection": "figures",
+  "categories": [
+   "Afrique",
+   "Portrait"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/portrait-africain-tete-penchee.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/IMG_6729.jpg",
+  "ancienneUrl": "/sculptures/portrait-africain-tete-penchee/"
+ },
+ {
+  "slug": "rhinoceros",
+  "titre": "Rhinocéros",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/rhinoceros.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/11-1.jpg",
+  "ancienneUrl": "/sculptures/rhinoceros/"
+ },
+ {
+  "slug": "rhinopitheque",
+  "titre": "Rhinopithèque",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/rhinopitheque.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/19.jpg",
+  "ancienneUrl": "/sculptures/rhinopitheque/"
+ },
+ {
+  "slug": "suricate",
+  "titre": "Suricate",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/suricate.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/gren2.jpg",
+  "ancienneUrl": "/sculptures/suricate/"
+ },
+ {
+  "slug": "tamanoir",
+  "titre": "Tamanoir",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/tamanoir.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/14-1.jpg",
+  "ancienneUrl": "/sculptures/tamanoir/"
+ },
+ {
+  "slug": "tarsiers",
+  "titre": "Tarsiers",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/tarsiers.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/tarsiers.jpg",
+  "ancienneUrl": "/sculptures/tarsiers/"
+ },
+ {
+  "slug": "tatou",
+  "titre": "Tatou",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/tatou.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/04/13.jpg",
+  "ancienneUrl": "/sculptures/tatou/"
+ },
+ {
+  "slug": "ecureuil",
+  "titre": "Écureuil",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/ecureuil.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/Ecureuil.jpg",
+  "ancienneUrl": "/sculptures/ecureuil/"
+ },
+ {
+  "slug": "elephant",
+  "titre": "Éléphant",
+  "collection": "bestiaire",
+  "categories": [
+   "Animaux"
+  ],
+  "annee": 2019,
+  "image": "/images/oeuvres/elephant.jpg",
+  "source": "https://chantal-porras.fr/wp-content/uploads/2019/03/03-11.jpg",
+  "ancienneUrl": "/sculptures/elephant-2/"
+ }
+]

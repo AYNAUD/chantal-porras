@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
+import CarteOeuvre from '../components/CarteOeuvre.astro';
+import oeuvres from '../data/oeuvres.json';
+import site from '../data/site.json';
+
+// Œuvre mise en avant en haut de page, puis les six suivantes les plus récentes.
+const vedette = oeuvres.find((o) => o.slug === 'grizzly') ?? oeuvres[0];
+const recentes = oeuvres.filter((o) => o.slug !== vedette.slug && o.collection === 'bestiaire').slice(0, 6);
+const compte = (id: string) => oeuvres.filter((o) => o.collection === id).length;
+---
+<Base image={vedette.image}>
+  <section class="conteneur hero">
+    <figure class="hero-visuel">
+      <a href={`/oeuvres/${vedette.slug}/`}>
+        <Visuel src={vedette.image} alt={vedette.titre} ratio="4 / 3" chargement="eager" />
+      </a>
+      <figcaption><em>{vedette.titre}</em>, {vedette.annee}</figcaption>
+    </figure>
+    <div class="hero-texte">
+      <p class="surtitre">Sculptrice · Nîmes</p>
+      <h1>La beauté et la fragilité du vivant, taillées en plans et arêtes vives.</h1>
+      <a href="/collections/bestiaire/" class="lien-souligne">Voir le bestiaire</a>
+    </div>
+  </section>
+
+  <section class="conteneur bloc">
+    <div class="entete-section">
+      <h2>Œuvres récentes</h2>
+      <a href="/oeuvres/" class="lien-souligne">Toutes les sculptures</a>
+    </div>
+    <div class="grille-oeuvres">
+      {recentes.map((o) => <CarteOeuvre oeuvre={o} />)}
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="conteneur demarche">
+      <div class="demarche-visuel">
+        <Visuel src="/images/site/atelier.jpg" alt="L'atelier, Nîmes" ratio="3 / 4" />
+      </div>
+      <div class="demarche-texte">
+        <p class="surtitre">Démarche</p>
+        <h2>Une construction classique de la forme, puis la simplification jusqu'aux lignes de force.</h2>
+        <p>Formée au dessin et à la sculpture aux Beaux-Arts de Nîmes, Chantal Porras observe les animaux dans leur milieu, souvent des espèces menacées. Elle cherche l'équilibre entre courbes douces et angles tendus, et le caractère de chaque sujet.</p>
+        <p>Médaille d'argent au Salon National des Artistes Animaliers de Bry-sur-Marne.</p>
+        <a href="/demarche/" class="lien-souligne">Lire la démarche</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="conteneur section">
+    <h2 class="titre-collections">Collections</h2>
+    <div class="collections">
+      {site.collections.map((c) => (
+        <a href={`/collections/${c.id}/`} class="collection">
+          <span class="collection-nom">{c.nom}</span>
+          <span class="collection-compte">{compte(c.id)} œuvres</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: 24px 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: flex-end;
+  }
+  .hero-visuel { margin: 0; flex: 999 1 560px; min-width: 0; }
+  .hero-visuel figcaption { margin-top: 14px; font-size: 13px; color: var(--texte-discret); }
+  .hero-visuel em { font-family: var(--serif); font-size: 18px; color: var(--texte); }
+  .hero-texte { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; padding-bottom: 40px; align-items: flex-start; }
+  .hero-texte h1 { font-size: clamp(38px, 5vw, 52px); line-height: 1.05; }
+
+  .bloc { padding-bottom: 112px; }
+
+  .demarche { display: flex; flex-wrap: wrap; gap: 64px; align-items: center; }
+  .demarche-visuel { flex: 1 1 320px; max-width: 480px; }
+  .demarche-texte { flex: 1 1 420px; max-width: 620px; display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+  .demarche-texte h2 { font-size: clamp(30px, 4vw, 40px); line-height: 1.15; }
+  .demarche-texte p:not(.surtitre) { margin: 0; color: var(--texte-doux); }
+
+  .titre-collections { font-size: 36px; margin-bottom: 40px; }
+  .collections { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .collection { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 24px 0; border-top: 1px solid var(--texte); }
+  .collection-nom { font-family: var(--serif); font-size: 28px; }
+  .collection-compte { font-size: 13px; color: var(--texte-discret); white-space: nowrap; }
+</style>

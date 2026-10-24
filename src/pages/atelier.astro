@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
+import photos from '../data/atelier.json';
+
+const galeries = [
+  { id: 'creation', titre: 'La création', texte: 'Du modelage à la pièce terminée.' },
+  { id: 'fonderie', titre: 'La fonderie', texte: 'Le passage au bronze.' },
+];
+---
+<Base titre="L'atelier" description="L'atelier de Chantal Porras à Nîmes : création et fonderie.">
+  <section class="conteneur section entete-atelier">
+    <p class="surtitre">Nîmes, Gard</p>
+    <h1>L'atelier</h1>
+  </section>
+  {galeries.map((g) => {
+    const liste = photos.filter((p) => p.galerie === g.id);
+    return (
+      <section class="conteneur galerie">
+        <div class="entete-section">
+          <h2>{g.titre}</h2>
+          <span class="surtitre">{g.texte}</span>
+        </div>
+        <div class="mosaique">
+          {liste.map((p, i) => (
+            <Visuel src={p.image} alt={`${g.titre}, photo ${i + 1}`} ratio={i % 3 === 0 ? '3 / 4' : '4 / 3'} />
+          ))}
+        </div>
+      </section>
+    );
+  })}
+</Base>
+
+<style>
+  .entete-atelier { padding-top: 32px; padding-bottom: 48px; }
+  .entete-atelier h1 { font-size: clamp(42px, 6vw, 64px); margin-top: 12px; }
+  .galerie { padding-bottom: 96px; }
+  .mosaique { columns: 3 260px; column-gap: 24px; }
+  .mosaique > :global(*) { break-inside: avoid; margin-bottom: 24px; }
+</style>

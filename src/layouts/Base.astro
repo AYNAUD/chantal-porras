@@ -1,0 +1,136 @@
+---
+import '../styles/global.css';
+import site from '../data/site.json';
+
+interface Props {
+  titre?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  titre,
+  description = 'Chantal Porras, sculptrice à Nîmes. Sculpture animalière, portraits et figures.',
+  image,
+} = Astro.props;
+
+const titrePage = titre ? `${titre} · ${site.nom}` : `${site.nom} · Sculptrice`;
+const canonique = new URL(Astro.url.pathname, Astro.site);
+const chemin = Astro.url.pathname;
+
+const menu = [
+  { href: '/oeuvres/', libelle: 'Œuvres' },
+  { href: '/demarche/', libelle: 'Démarche' },
+  { href: '/atelier/', libelle: "L'atelier" },
+  { href: '/actualites/', libelle: 'Actualités' },
+  { href: '/contact/', libelle: 'Contact' },
+];
+const actif = (href: string) =>
+  chemin.startsWith(href) || (href === '/oeuvres/' && chemin.startsWith('/collections/'));
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{titrePage}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonique}>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={titrePage}>
+  <meta property="og:description" content={description}>
+  <meta property="og:locale" content="fr_FR">
+  {image && <meta property="og:image" content={new URL(image, Astro.site)}>}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="visuellement-cache" href="#contenu">Aller au contenu</a>
+  <header class="conteneur entete">
+    <a href="/" class="marque">{site.nom}</a>
+    <details class="menu-mobile">
+      <summary aria-label="Ouvrir le menu">Menu</summary>
+      <nav aria-label="Navigation principale (mobile)">
+        {menu.map((m) => <a href={m.href} aria-current={actif(m.href) ? 'page' : undefined}>{m.libelle}</a>)}
+      </nav>
+    </details>
+    <nav class="menu" aria-label="Navigation principale">
+      {menu.map((m) => <a href={m.href} aria-current={actif(m.href) ? 'page' : undefined}>{m.libelle}</a>)}
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <slot />
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <a href="/" class="marque">{site.nom}</a>
+      <span>Atelier à {site.ville}<br>Visites sur rendez-vous</span>
+      <span>
+        <a href={`mailto:${site.email}`}>{site.email}</a><br>
+        {site.telephones.map((t, i) => <>{i > 0 && ' · '}<a href={`tel:${t.replace(/\s/g, '')}`}>{t}</a></>)}
+      </span>
+      <span>© {new Date().getFullYear()} {site.nom}</span>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style>
+  .entete {
+    padding-block: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .marque { font-family: var(--serif); font-size: 30px; letter-spacing: 0.04em; line-height: 1; }
+  .menu, .menu-mobile nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 32px;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .menu a, .menu-mobile a { padding-block: 8px; }
+  [aria-current='page'] { border-bottom: 1px solid currentColor; }
+  .menu-mobile { display: none; }
+  .menu-mobile summary {
+    list-style: none;
+    cursor: pointer;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .menu-mobile summary::-webkit-details-marker { display: none; }
+
+  @media (max-width: 720px) {
+    .entete { align-items: center; padding-block: 20px; }
+    .marque { font-size: 26px; }
+    .menu { display: none; }
+    .menu-mobile { display: block; }
+    .menu-mobile[open] { flex-basis: 100%; order: 3; }
+    .menu-mobile[open] summary { justify-content: flex-end; }
+    .menu-mobile nav { flex-direction: column; gap: 4px; padding-top: 8px; }
+  }
+
+  .pied { border-top: 1px solid var(--filet); margin-top: 0; }
+  .pied-grille {
+    padding-block: 48px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 64px;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--texte-doux);
+  }
+  .pied .marque { font-size: 24px; color: var(--texte); }
+</style>

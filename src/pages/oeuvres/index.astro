@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListeOeuvres from '../../components/ListeOeuvres.astro';
+import oeuvres from '../../data/oeuvres.json';
+---
+<Base titre="Œuvres" description="Toutes les sculptures de Chantal Porras : bestiaire, portraits, cubisme.">
+  <ListeOeuvres titre="Sculptures" oeuvres={oeuvres} actif="toutes" />
+</Base>

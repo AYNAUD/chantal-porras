@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
+---
+<Base titre="Démarche" description="Parcours et démarche de Chantal Porras, sculptrice formée aux Beaux-Arts de Nîmes.">
+  <section class="conteneur section demarche">
+    <div class="colonne-texte">
+      <p class="surtitre">Démarche</p>
+      <h1>Observer, construire, épurer.</h1>
+      <div class="texte-courant">
+        <p>Originaire de l'île d'Oléron, Chantal Porras a étudié le dessin et la sculpture à l'École des Beaux-Arts de Nîmes. Son travail est avant tout figuratif : le corps et le portrait en sont le cœur, et la sculpture animalière, au style plus épuré, s'est imposée à leurs côtés.</p>
+        <p>Les animaux qu'elle sculpte sont souvent des espèces menacées. Elle veut montrer leur beauté et leur fragilité. Chaque sujet commence par une longue observation, dans son milieu naturel et en vidéo.</p>
+        <p>La forme est d'abord construite de façon classique, puis simplifiée par des plans et des arêtes vives qui créent des lignes de force. Elle cherche l'équilibre entre courbes douces et angles tendus, et accorde une attention particulière à l'expression et au caractère, que l'on retrouve aussi dans ses bustes réalistes.</p>
+      </div>
+    </div>
+    <figure class="colonne-visuel">
+      <Visuel src="/images/site/portrait.jpg" alt="Chantal Porras à l'atelier" ratio="3 / 4" chargement="eager" />
+    </figure>
+  </section>
+
+  <section class="section section--alt">
+    <div class="conteneur reperes">
+      <h2>Repères</h2>
+      <dl>
+        <div><dt>Formation</dt><dd>Dessin et sculpture, École des Beaux-Arts de Nîmes</dd></div>
+        <div><dt>Distinction</dt><dd>Médaille d'argent, Salon National des Artistes Animaliers, Bry-sur-Marne</dd></div>
+        <div><dt>Expositions</dt><dd>Expositions collectives et personnelles en galeries et salons, en France et à l'étranger</dd></div>
+        <div><dt>Collections</dt><dd>Œuvres en collections privées et publiques</dd></div>
+      </dl>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .demarche { display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start; padding-top: 32px; }
+  .colonne-texte { flex: 999 1 480px; display: flex; flex-direction: column; gap: 24px; }
+  .colonne-texte h1 { font-size: clamp(42px, 6vw, 64px); line-height: 1.05; }
+  .colonne-texte .texte-courant { font-size: 17px; }
+  .colonne-visuel { margin: 0; flex: 1 1 320px; max-width: 460px; }
+  .reperes h2 { font-size: 36px; margin-bottom: 32px; }
+  dl { margin: 0; border-top: 1px solid var(--texte); }
+  dl div { display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 20px 0; border-bottom: 1px solid var(--filet); }
+  dt { flex: 0 0 160px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--texte-discret); padding-top: 4px; }
+  dd { margin: 0; flex: 1 1 320px; font-family: var(--serif); font-size: 22px; line-height: 1.3; }
+</style>

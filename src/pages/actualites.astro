@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
+import actualites from '../data/actualites.json';
+
+const formatDate = (d: string) =>
+  new Date(d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base titre="Actualités" description="Expositions, presse et événements autour du travail de Chantal Porras.">
+  <section class="conteneur section">
+    <p class="surtitre">Expositions · Presse · Événements</p>
+    <h1>Actualités</h1>
+    <div class="liste">
+      {actualites.map((a) => (
+        <article class="actu" id={a.slug}>
+          <div class="actu-visuel"><Visuel src={a.image} alt={a.titre} ratio="4 / 3" /></div>
+          <div class="actu-texte">
+            <p class="surtitre">{a.rubrique} · <time datetime={a.date}>{formatDate(a.date)}</time></p>
+            <h2>{a.titre}</h2>
+            <p>{a.texte}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  h1 { font-size: clamp(42px, 6vw, 64px); margin: 12px 0 48px; }
+  .liste { display: flex; flex-direction: column; }
+  .actu { display: flex; flex-wrap: wrap; gap: 32px 48px; padding: 40px 0; border-top: 1px solid var(--filet); align-items: center; }
+  .actu-visuel { flex: 1 1 280px; max-width: 420px; }
+  .actu-texte { flex: 999 1 360px; display: flex; flex-direction: column; gap: 12px; }
+  .actu-texte h2 { font-size: 34px; }
+  .actu-texte p:not(.surtitre) { margin: 0; color: var(--texte-doux); }
+</style>

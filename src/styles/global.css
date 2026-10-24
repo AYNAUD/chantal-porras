@@ -1,0 +1,92 @@
+:root {
+  --fond: #F6F4F0;
+  --fond-alt: #ECE8E1;
+  --emplacement: #E6E1D8;
+  --texte: #2B2A27;
+  --texte-doux: #4A453D;
+  --texte-discret: #6B6355;
+  --filet: #D6D0C4;
+  --accent: #6B5B45;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Work Sans', system-ui, sans-serif;
+  --largeur: 1280px;
+  --gouttiere: clamp(16px, 4vw, 24px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
+
+.conteneur { max-width: var(--largeur); margin: 0 auto; padding-inline: var(--gouttiere); }
+
+.surtitre {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--texte-discret);
+}
+
+.lien-souligne {
+  display: inline-block;
+  padding: 12px 0;
+  border-bottom: 1px solid currentColor;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section { padding-block: clamp(64px, 9vw, 112px); }
+.section--alt { background: var(--fond-alt); }
+
+.entete-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-top: 1px solid var(--filet);
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+.entete-section h2 { font-size: clamp(30px, 4vw, 36px); }
+
+.grille-oeuvres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 56px 40px;
+}
+@media (max-width: 640px) {
+  .grille-oeuvres { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 16px; }
+}
+
+.texte-courant { max-width: 680px; color: var(--texte-doux); }
+.texte-courant p { margin: 0 0 1.1em; }
+
+.visuellement-cache {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

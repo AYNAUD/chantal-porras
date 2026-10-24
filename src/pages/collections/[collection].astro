@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListeOeuvres from '../../components/ListeOeuvres.astro';
+import oeuvres from '../../data/oeuvres.json';
+import site from '../../data/site.json';
+
+export function getStaticPaths() {
+  return site.collections.map((c) => ({ params: { collection: c.id }, props: { collection: c } }));
+}
+
+const { collection } = Astro.props;
+const liste = oeuvres.filter((o) => o.collection === collection.id);
+---
+<Base titre={collection.nom} description={collection.description}>
+  <ListeOeuvres titre={collection.nom} intro={collection.description} oeuvres={liste} actif={collection.id} />
+</Base>

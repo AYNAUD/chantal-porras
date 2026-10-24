@@ -1,0 +1,48 @@
+---
+import CarteOeuvre from './CarteOeuvre.astro';
+import site from '../data/site.json';
+
+interface Props {
+  titre: string;
+  intro?: string;
+  oeuvres: { slug: string; titre: string; annee: number; image: string }[];
+  actif: string;
+}
+
+const { titre, intro, oeuvres, actif } = Astro.props;
+const onglets = [{ id: 'toutes', nom: 'Toutes', href: '/oeuvres/' }].concat(
+  site.collections.map((c) => ({ id: c.id, nom: c.nom, href: `/collections/${c.id}/` })),
+);
+---
+<section class="conteneur section liste">
+  <p class="surtitre">{oeuvres.length} œuvres</p>
+  <h1>{titre}</h1>
+  {intro && <p class="intro">{intro}</p>}
+  <nav class="onglets" aria-label="Collections">
+    {onglets.map((o) => (
+      <a href={o.href} aria-current={o.id === actif ? 'page' : undefined}>{o.nom}</a>
+    ))}
+  </nav>
+  <div class="grille-oeuvres">
+    {oeuvres.map((o) => <CarteOeuvre oeuvre={o} />)}
+  </div>
+</section>
+
+<style>
+  .liste { padding-top: 32px; }
+  h1 { font-size: clamp(42px, 6vw, 64px); line-height: 1.05; margin-top: 12px; }
+  .intro { max-width: 620px; color: var(--texte-doux); margin: 20px 0 0; }
+  .onglets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    margin: 40px 0 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--filet);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .onglets a { padding-block: 10px; }
+  .onglets [aria-current='page'] { border-bottom: 1px solid currentColor; }
+</style>

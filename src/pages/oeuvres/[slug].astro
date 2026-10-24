@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import Visuel from '../../components/Visuel.astro';
+import CarteOeuvre from '../../components/CarteOeuvre.astro';
+import oeuvres from '../../data/oeuvres.json';
+import site from '../../data/site.json';
+
+export function getStaticPaths() {
+  return oeuvres.map((o) => ({ params: { slug: o.slug }, props: { oeuvre: o } }));
+}
+
+const { oeuvre } = Astro.props;
+const collection = site.collections.find((c) => c.id === oeuvre.collection)!;
+const memes = oeuvres.filter((o) => o.collection === oeuvre.collection);
+const i = memes.findIndex((o) => o.slug === oeuvre.slug);
+const precedente = memes[(i - 1 + memes.length) % memes.length];
+const suivante = memes[(i + 1) % memes.length];
+const voisines = memes.filter((o) => o.slug !== oeuvre.slug).slice(0, 3);
+const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
+---
+<Base titre={oeuvre.titre} description={`${oeuvre.titre}, sculpture de Chantal Porras (${collection.nom}).`} image={oeuvre.image}>
+  <article class="conteneur fiche">
+    <figure class="fiche-visuel">
+      <Visuel src={oeuvre.image} alt={oeuvre.titre} ratio="4 / 5" chargement="eager" />
+    </figure>
+    <div class="fiche-texte">
+      <a href={`/collections/${collection.id}/`} class="surtitre">{collection.nom}</a>
+      <h1>{oeuvre.titre}</h1>
+      <dl>
+        <div><dt>Année</dt><dd>{oeuvre.annee}</dd></div>
+        <div><dt>Matériau</dt><dd>[À PRÉCISER]</dd></div>
+        <div><dt>Dimensions</dt><dd>[À PRÉCISER]</dd></div>
+      </dl>
+      <a href={`mailto:${site.email}?subject=${sujet}`} class="lien-souligne">Se renseigner sur cette œuvre</a>
+      <nav class="voisins" aria-label="Œuvres voisines">
+        <a href={`/oeuvres/${precedente.slug}/`}>← {precedente.titre}</a>
+        <a href={`/oeuvres/${suivante.slug}/`}>{suivante.titre} →</a>
+      </nav>
+    </div>
+  </article>
+
+  <section class="conteneur section">
+    <div class="entete-section">
+      <h2>Dans la même collection</h2>
+      <a href={`/collections/${collection.id}/`} class="lien-souligne">Voir tout</a>
+    </div>
+    <div class="grille-oeuvres">
+      {voisines.map((o) => <CarteOeuvre oeuvre={o} />)}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .fiche { padding-block: 24px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-end; }
+  .fiche-visuel { margin: 0; flex: 999 1 520px; min-width: 0; max-width: 760px; }
+  .fiche-texte { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+  h1 { font-size: clamp(40px, 5vw, 56px); line-height: 1.05; font-style: italic; }
+  dl { margin: 0; width: 100%; border-top: 1px solid var(--filet); }
+  dl div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--filet); font-size: 14px; }
+  dt { color: var(--texte-discret); }
+  dd { margin: 0; }
+  .voisins { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; width: 100%; font-size: 14px; color: var(--texte-doux); padding-top: 16px; }
+  .voisins a { padding-block: 10px; }
+</style>
