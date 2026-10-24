@@ -1,28 +1,42 @@
 ---
 import Base from '../layouts/Base.astro';
+import Visuel from '../components/Visuel.astro';
 import site from '../data/site.json';
+import oeuvres from '../data/oeuvres.json';
+
+const oeuvre = oeuvres.find((o) => o.slug === 'fennec-qui-dort')!;
 ---
-<Base titre="Contact" description="Contacter Chantal Porras, sculptrice à Nîmes : visites d'atelier, acquisitions, commandes.">
+<Base titre="Contact" description="Contacter Chantal Porras, sculptrice à Nîmes : visites d'atelier, acquisitions, commandes." image={oeuvre.image}>
   <section class="conteneur section contact">
+    <figure class="visuel">
+      <a href={`/oeuvres/${oeuvre.slug}/`}>
+        <Visuel src={oeuvre.image} alt={oeuvre.titre} chargement="eager" hauteurMax="78vh" />
+      </a>
+      <figcaption><a href={`/oeuvres/${oeuvre.slug}/`}><em>{oeuvre.titre}</em></a>, bronze</figcaption>
+    </figure>
     <div class="colonne">
       <p class="surtitre">Contact</p>
       <h1>Visites d'atelier, acquisitions et commandes.</h1>
       <p class="texte-courant">L'atelier se visite sur rendez-vous, à Nîmes. Pour toute question sur une œuvre, une exposition ou une commande, écrivez ou appelez directement.</p>
+      <dl class="coordonnees">
+        <div><dt>E-mail</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
+        <div><dt>Téléphone</dt><dd>{site.telephones.map((t) => <a href={`tel:${t.replace(/\s/g, '')}`}>{t}</a>)}</dd></div>
+        <div><dt>Atelier</dt><dd>{site.ville}</dd></div>
+      </dl>
     </div>
-    <dl class="coordonnees">
-      <div><dt>E-mail</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
-      <div><dt>Téléphone</dt><dd>{site.telephones.map((t) => <a href={`tel:${t.replace(/\s/g, '')}`}>{t}</a>)}</dd></div>
-      <div><dt>Atelier</dt><dd>{site.ville}</dd></div>
-    </dl>
   </section>
 </Base>
 
 <style>
-  .contact { display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-end; padding-top: 32px; }
-  .colonne { flex: 999 1 460px; display: flex; flex-direction: column; gap: 24px; }
-  h1 { font-size: clamp(38px, 5vw, 56px); line-height: 1.08; }
-  .coordonnees { flex: 1 1 320px; margin: 0; border-top: 1px solid var(--texte); }
-  .coordonnees div { padding: 20px 0; border-bottom: 1px solid var(--filet); display: flex; flex-direction: column; gap: 6px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center; padding-top: 32px; }
+  .visuel { flex: 999 1 460px; margin: 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  .visuel figcaption { font-size: 14px; color: var(--texte-discret); }
+  .visuel em { font-family: var(--serif); font-size: 18px; color: var(--texte-doux); }
+  .colonne { flex: 1 1 340px; display: flex; flex-direction: column; gap: 24px; }
+  h1 { font-size: clamp(36px, 4vw, 50px); line-height: 1.08; }
+  .texte-courant { margin: 0; color: var(--texte-doux); }
+  .coordonnees { margin: 16px 0 0; border-top: 1px solid var(--texte); }
+  .coordonnees div { padding: 18px 0; border-bottom: 1px solid var(--filet); display: flex; flex-direction: column; gap: 6px; }
   dt { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--texte-discret); }
   dd { margin: 0; font-family: var(--serif); font-size: 24px; display: flex; flex-direction: column; overflow-wrap: anywhere; }
 </style>
