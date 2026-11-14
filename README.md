@@ -30,3 +30,10 @@ Chaque œuvre attend sa photo dans `public/images/oeuvres/<slug>.jpg`. Tant qu'u
 - Matériaux et dimensions des œuvres : champs `materiau` et `dimensions` de `oeuvres.json` (une ligne n'apparaît sur la fiche que si le champ est rempli).
 - Les années sont estimées d'après la date de mise en ligne sur l'ancien site : à corriger si besoin.
 - Textes des actualités, profils de réseaux sociaux.
+
+## Photos allégées
+
+Chaque photo existe aussi en WebP à plusieurs tailles (480, 960 et 1600 px) dans `public/images/_v/`.
+Le navigateur charge la plus petite taille suffisante pour l'écran.
+Après avoir ajouté ou remplacé une photo JPEG dans `public/images/`, lancer `npm run vignettes`
+puis versionner les fichiers créés. Sans vignette, le site affiche simplement le JPEG d'origine.

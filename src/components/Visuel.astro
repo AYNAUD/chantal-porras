@@ -1,6 +1,8 @@
 ---
 // Affiche la photo entière, dans ses proportions d'origine, si elle est présente dans public/.
 // Sinon, un emplacement titré au ratio demandé.
+// Les versions WebP allégées (scripts/vignettes.mjs) sont proposées au navigateur via srcset,
+// qui charge la plus petite suffisante pour l'écran ; le JPEG d'origine reste la référence.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -10,9 +12,16 @@ interface Props {
   ratio?: string;
   chargement?: 'lazy' | 'eager';
   hauteurMax?: string;
+  /** Largeur d'affichage, pour que le navigateur choisisse la bonne taille (attribut sizes). */
+  tailles?: string;
+  prioritaire?: boolean;
 }
 
-const { src, alt, ratio = '4 / 5', chargement = 'lazy', hauteurMax } = Astro.props;
+const {
+  src, alt, ratio = '4 / 5', chargement = 'lazy', hauteurMax,
+  tailles = '(max-width: 640px) 50vw, (max-width: 1000px) 45vw, 400px',
+  prioritaire = false,
+} = Astro.props;
 const fichier = path.join(process.cwd(), 'public', src);
 const present = fs.existsSync(fichier);
 
@@ -32,15 +41,26 @@ function dimensionsJpeg(octets: Buffer) {
 }
 
 const dims = present ? dimensionsJpeg(fs.readFileSync(fichier)) : null;
+
+// Variantes WebP disponibles (480, 960, 1600 px), plus l'original à sa largeur réelle.
+const base = src.replace(/^\/images\//, '').replace(/\.jpe?g$/i, '');
+const variantes = [480, 960, 1600]
+  .map((l) => ({ l, url: `/images/_v/${base}-${l}.webp` }))
+  .filter((v) => fs.existsSync(path.join(process.cwd(), 'public', v.url)))
+  .map((v) => `${v.url} ${dims ? Math.min(v.l, dims.largeur) : v.l}w`);
+const srcset = variantes.length && dims ? [...variantes, `${src} ${dims.largeur}w`].join(', ') : undefined;
 ---
 {present ? (
   <img
     src={src}
+    srcset={srcset}
+    sizes={srcset ? tailles : undefined}
     alt={alt}
     width={dims?.largeur}
     height={dims?.hauteur}
     loading={chargement}
     decoding="async"
+    fetchpriority={prioritaire ? 'high' : undefined}
     class="photo"
     style={hauteurMax ? `max-height: ${hauteurMax};` : undefined}
   />
@@ -57,6 +77,7 @@ const dims = present ? dimensionsJpeg(fs.readFileSync(fichier)) : null;
     max-width: 100%;
     height: auto;
     object-fit: contain;
+    background: var(--emplacement);
   }
   .emplacement {
     width: 100%;

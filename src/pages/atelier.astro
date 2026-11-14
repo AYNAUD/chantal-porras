@@ -25,7 +25,7 @@ const galeries = [
         <div class="mosaique">
           {liste.map((p, i) => (
             <figure>
-              <Visuel src={p.image} alt={p.legende} ratio={i % 3 === 0 ? '3 / 4' : '4 / 3'} />
+              <Visuel src={p.image} alt={p.legende} ratio={i % 3 === 0 ? '3 / 4' : '4 / 3'} tailles="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 400px" />
               {(i === 0 || liste[i - 1].legende !== p.legende) && <figcaption>{p.legende}</figcaption>}
             </figure>
           ))}

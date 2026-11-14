@@ -8,13 +8,17 @@ interface Props {
 const { oeuvre } = Astro.props;
 ---
 <a class="carte" href={`/oeuvres/${oeuvre.slug}/`}>
-  <Visuel src={oeuvre.image} alt={oeuvre.titre} />
+  <!-- Le titre est déjà écrit sous la photo : texte alternatif vide pour ne pas le lire deux fois. -->
+  <Visuel src={oeuvre.image} alt="" />
   <span class="titre">{oeuvre.titre}</span>
   <span class="annee">{oeuvre.annee}</span>
 </a>
 
 <style>
   .carte { display: flex; flex-direction: column; gap: 12px; }
+  .carte :global(img) { transition: opacity 0.25s; }
+  .carte:hover :global(img) { opacity: 0.88; }
+  @media (prefers-reduced-motion: reduce) { .carte :global(img) { transition: none; } }
   .titre { font-family: var(--serif); font-size: clamp(18px, 2.4vw, 22px); font-style: italic; line-height: 1.2; }
   .annee { font-size: 13px; color: var(--texte-discret); margin-top: -8px; }
   .carte:hover .titre { color: var(--accent); }
