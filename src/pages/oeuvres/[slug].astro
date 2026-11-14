@@ -9,22 +9,64 @@ export function getStaticPaths() {
   return oeuvres.map((o) => ({ params: { slug: o.slug }, props: { oeuvre: o } }));
 }
 
-const { oeuvre } = Astro.props;
+const { oeuvre } = Astro.props as { oeuvre: (typeof oeuvres)[number] & { materiau?: string; dimensions?: string } };
 const collection = site.collections.find((c) => c.id === oeuvre.collection)!;
 const memes = oeuvres.filter((o) => o.collection === oeuvre.collection);
 const i = memes.findIndex((o) => o.slug === oeuvre.slug);
 const precedente = memes[(i - 1 + memes.length) % memes.length];
 const suivante = memes[(i + 1) % memes.length];
-const voisines = memes.filter((o) => o.slug !== oeuvre.slug).slice(0, 3);
+// Les voisines immédiates d'abord (après l'œuvre affichée), pour ne pas toujours montrer les mêmes.
+const voisines = [...memes.slice(i + 1), ...memes.slice(0, i)].slice(0, 3);
 const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
+const alt = `${oeuvre.titre}, sculpture de ${site.nom}`;
+
+// Description pour les moteurs de recherche : le texte de la fiche, coupé proprement vers 155 caractères.
+const resume = (t: string, max = 155) => {
+  if (t.length <= max) return t;
+  const coupe = t.slice(0, max);
+  return coupe.slice(0, coupe.lastIndexOf(' ')).replace(/[,;:]$/, '') + '…';
+};
+const description = oeuvre.texte
+  ? resume(`${oeuvre.titre}, sculpture de ${site.nom}. ${oeuvre.texte}`)
+  : `${oeuvre.titre}, sculpture de ${site.nom} (${collection.nom}).`;
+
+const racine = Astro.site!;
+const donnees = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VisualArtwork',
+    name: oeuvre.titre,
+    artform: 'Sculpture',
+    description: oeuvre.texte,
+    image: new URL(oeuvre.image, racine).toString(),
+    url: new URL(`/oeuvres/${oeuvre.slug}/`, racine).toString(),
+    creator: { '@id': `${racine}#artiste` },
+    genre: collection.nom,
+    ...(oeuvre.materiau ? { artMedium: oeuvre.materiau } : {}),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Œuvres', item: new URL('/oeuvres/', racine).toString() },
+      { '@type': 'ListItem', position: 2, name: collection.nom, item: new URL(`/collections/${collection.id}/`, racine).toString() },
+      { '@type': 'ListItem', position: 3, name: oeuvre.titre },
+    ],
+  },
+];
 ---
-<Base titre={oeuvre.titre} description={`${oeuvre.titre}, sculpture de Chantal Porras (${collection.nom}).`} image={oeuvre.image}>
+<Base titre={oeuvre.titre} description={description} image={oeuvre.image} donnees={donnees} typeOg="article">
   <article class="conteneur fiche">
     <figure class="fiche-visuel">
-      <Visuel src={oeuvre.image} alt={oeuvre.titre} ratio="4 / 5" chargement="eager" hauteurMax="80vh" />
+      <button type="button" class="agrandir" data-agrandir aria-label={`Agrandir la photo : ${oeuvre.titre}`}>
+        <Visuel src={oeuvre.image} alt={alt} ratio="4 / 5" chargement="eager" prioritaire hauteurMax="80vh" tailles="(max-width: 900px) 100vw, 760px" />
+        <span class="loupe" aria-hidden="true">Agrandir</span>
+      </button>
     </figure>
     <div class="fiche-texte">
-      <a href={`/collections/${collection.id}/`} class="surtitre">{collection.nom}</a>
+      <nav class="fil" aria-label="Fil d'Ariane">
+        <a href="/oeuvres/">Œuvres</a> <span aria-hidden="true">/</span> <a href={`/collections/${collection.id}/`}>{collection.nom}</a>
+      </nav>
       <h1>{oeuvre.titre}</h1>
       {oeuvre.texte && <p class="texte">{oeuvre.texte}</p>}
       <dl>
@@ -34,33 +76,83 @@ const sujet = encodeURIComponent(`Renseignements : ${oeuvre.titre}`);
       </dl>
       <a href={`mailto:${site.email}?subject=${sujet}`} class="lien-souligne">Se renseigner sur cette œuvre</a>
       <nav class="voisins" aria-label="Œuvres voisines">
-        <a href={`/oeuvres/${precedente.slug}/`}>← {precedente.titre}</a>
-        <a href={`/oeuvres/${suivante.slug}/`}>{suivante.titre} →</a>
+        <a href={`/oeuvres/${precedente.slug}/`} rel="prev" data-precedente><span aria-hidden="true">←</span> {precedente.titre}</a>
+        <span class="position">{i + 1} / {memes.length}</span>
+        <a href={`/oeuvres/${suivante.slug}/`} rel="next" data-suivante>{suivante.titre} <span aria-hidden="true">→</span></a>
       </nav>
     </div>
   </article>
 
-  <section class="conteneur section">
-    <div class="entete-section">
-      <h2>Dans la même collection</h2>
-      <a href={`/collections/${collection.id}/`} class="lien-souligne">Voir tout</a>
-    </div>
-    <div class="grille-oeuvres">
-      {voisines.map((o) => <CarteOeuvre oeuvre={o} />)}
-    </div>
-  </section>
+  <dialog class="visionneuse" aria-label={`Photo agrandie : ${oeuvre.titre}`}>
+    <form method="dialog"><button class="fermer" aria-label="Fermer">Fermer ✕</button></form>
+    <img src={oeuvre.image} alt={alt} loading="lazy" decoding="async" />
+  </dialog>
+
+  {voisines.length > 0 && (
+    <section class="conteneur section">
+      <div class="entete-section">
+        <h2>Dans la même collection</h2>
+        <a href={`/collections/${collection.id}/`} class="lien-souligne">Voir tout</a>
+      </div>
+      <div class="grille-oeuvres">
+        {voisines.map((o) => <CarteOeuvre oeuvre={o} />)}
+      </div>
+    </section>
+  )}
 </Base>
+
+<script>
+  // Photo en grand : clic sur l'image ; Échap ou clic hors de l'image pour fermer.
+  const visionneuse = document.querySelector<HTMLDialogElement>('.visionneuse');
+  document.querySelector('[data-agrandir]')?.addEventListener('click', () => visionneuse?.showModal());
+  visionneuse?.addEventListener('click', (e) => { if (e.target === visionneuse) visionneuse.close(); });
+
+  // Flèches gauche / droite du clavier : œuvre précédente / suivante.
+  document.addEventListener('keydown', (e) => {
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || visionneuse?.open) return;
+    const cible = e.target as HTMLElement;
+    if (cible.closest('input, textarea, select, [contenteditable]')) return;
+    const lien = e.key === 'ArrowLeft' ? '[data-precedente]' : e.key === 'ArrowRight' ? '[data-suivante]' : null;
+    const a = lien && document.querySelector<HTMLAnchorElement>(lien);
+    if (a) location.href = a.href;
+  });
+</script>
 
 <style>
   .fiche { padding-block: 24px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-end; }
   .fiche-visuel { margin: 0; flex: 999 1 520px; min-width: 0; max-width: 760px; }
+  .agrandir { position: relative; display: block; padding: 0; border: 0; background: none; cursor: zoom-in; max-width: 100%; }
+  .loupe {
+    position: absolute; right: 12px; bottom: 12px; padding: 6px 12px;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    background: rgb(246 244 240 / 0.9); color: var(--texte); opacity: 0; transition: opacity 0.2s;
+  }
+  .agrandir:hover .loupe, .agrandir:focus-visible .loupe { opacity: 1; }
+  @media (hover: none) { .loupe { opacity: 1; } }
   .fiche-texte { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+  .fil { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--texte-discret); }
+  .fil a { padding-block: 8px; }
+  .fil span { margin-inline: 6px; }
   h1 { font-size: clamp(40px, 5vw, 56px); line-height: 1.05; font-style: italic; }
   .texte { margin: 0; color: var(--texte-doux); font-size: 17px; }
   dl { margin: 0; width: 100%; border-top: 1px solid var(--filet); }
   dl div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--filet); font-size: 14px; }
   dt { color: var(--texte-discret); }
-  dd { margin: 0; }
-  .voisins { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; width: 100%; font-size: 14px; color: var(--texte-doux); padding-top: 16px; }
+  dd { margin: 0; text-align: right; }
+  .voisins { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; font-size: 14px; color: var(--texte-doux); padding-top: 16px; }
   .voisins a { padding-block: 10px; }
+  .position { font-size: 12px; color: var(--texte-discret); letter-spacing: 0.1em; }
+
+  .visionneuse {
+    width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+    background: var(--fond);
+  }
+  .visionneuse::backdrop { background: rgb(43 42 39 / 0.4); }
+  .visionneuse[open] { display: flex; align-items: center; justify-content: center; }
+  .visionneuse img { max-width: calc(100vw - 32px); max-height: calc(100dvh - 96px); width: auto; height: auto; object-fit: contain; }
+  .visionneuse form { position: absolute; top: 16px; right: 16px; }
+  .fermer {
+    font: inherit; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+    background: none; border: 0; padding: 12px; min-height: 44px; color: var(--texte);
+  }
 </style>

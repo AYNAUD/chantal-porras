@@ -10,11 +10,11 @@ const vedette = oeuvres.find((o) => o.slug === 'grizzly') ?? oeuvres[0];
 const recentes = oeuvres.filter((o) => o.slug !== vedette.slug && o.collection === 'bestiaire').slice(0, 6);
 const compte = (id: string) => oeuvres.filter((o) => o.collection === id).length;
 ---
-<Base image={vedette.image}>
+<Base image={vedette.image} description="Chantal Porras, sculptrice à Nîmes : bronzes animaliers en plans et arêtes vives, portraits et figures. Œuvres, atelier, expositions et contact.">
   <section class="conteneur hero">
     <figure class="hero-visuel">
       <a href={`/oeuvres/${vedette.slug}/`}>
-        <Visuel src={vedette.image} alt={vedette.titre} ratio="4 / 3" chargement="eager" hauteurMax="75vh" />
+        <Visuel src={vedette.image} alt={`${vedette.titre}, sculpture de Chantal Porras`} ratio="4 / 3" chargement="eager" prioritaire hauteurMax="75vh" tailles="(max-width: 900px) 100vw, 860px" />
       </a>
       <figcaption><em>{vedette.titre}</em>, {vedette.annee}</figcaption>
     </figure>
@@ -38,7 +38,7 @@ const compte = (id: string) => oeuvres.filter((o) => o.collection === id).length
   <section class="section section--alt">
     <div class="conteneur demarche">
       <div class="demarche-visuel">
-        <Visuel src="/images/site/atelier.jpg" alt="L'atelier, Nîmes" ratio="3 / 4" />
+        <Visuel src="/images/site/atelier.jpg" alt="Un buste en terre en cours de modelage, à l'atelier de Nîmes" ratio="3 / 4" tailles="(max-width: 720px) 100vw, 480px" />
       </div>
       <div class="demarche-texte">
         <p class="surtitre">Démarche</p>

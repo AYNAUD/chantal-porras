@@ -10,7 +10,7 @@ const oeuvre = oeuvres.find((o) => o.slug === 'fennec-qui-dort')!;
   <section class="conteneur section contact">
     <figure class="visuel">
       <a href={`/oeuvres/${oeuvre.slug}/`}>
-        <Visuel src={oeuvre.image} alt={oeuvre.titre} chargement="eager" hauteurMax="78vh" />
+        <Visuel src={oeuvre.image} alt={`${oeuvre.titre}, sculpture de Chantal Porras`} chargement="eager" prioritaire hauteurMax="78vh" tailles="(max-width: 900px) 100vw, 760px" />
       </a>
       <figcaption><a href={`/oeuvres/${oeuvre.slug}/`}><em>{oeuvre.titre}</em></a>, bronze</figcaption>
     </figure>

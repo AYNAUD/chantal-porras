@@ -1,10 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
 ---
-<Base titre="Page introuvable">
+<Base titre="Page introuvable" description="Cette page n'existe pas ou a changé d'adresse.">
   <section class="conteneur section">
     <p class="surtitre">Erreur 404</p>
-    <h1 style="font-size: clamp(38px, 5vw, 56px); margin: 12px 0 32px;">Cette page n'existe pas ou a changé d'adresse.</h1>
-    <a href="/oeuvres/" class="lien-souligne">Voir les sculptures</a>
+    <h1>Cette page n'existe pas ou a changé d'adresse.</h1>
+    <p class="intro">Le site a été refait : les sculptures sont désormais rangées par collection.</p>
+    <ul class="pistes">
+      <li><a href="/oeuvres/">Toutes les sculptures</a></li>
+      {site.collections.map((c) => <li><a href={`/collections/${c.id}/`}>{c.nom}</a></li>)}
+      <li><a href="/actualites/">Actualités</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
   </section>
 </Base>
+
+<style>
+  h1 { font-size: clamp(38px, 5vw, 56px); line-height: 1.08; margin: 12px 0 20px; max-width: 900px; }
+  .intro { color: var(--texte-doux); margin: 0 0 40px; }
+  .pistes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 32px; }
+  .pistes a { display: block; padding: 18px 0; border-top: 1px solid var(--filet); font-family: var(--serif); font-size: 24px; }
+</style>

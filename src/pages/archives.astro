@@ -67,7 +67,7 @@ const galeries = [
                 </div>
                 {oeuvre && (
                   <a class="vignette" href={`/oeuvres/${oeuvre.slug}/`}>
-                    <Visuel src={oeuvre.image} alt={oeuvre.titre} hauteurMax="180px" chargement="eager" />
+                    <Visuel src={oeuvre.image} alt={`${oeuvre.titre}, sculpture de Chantal Porras`} hauteurMax="180px" tailles="140px" />
                   </a>
                 )}
               </li>
