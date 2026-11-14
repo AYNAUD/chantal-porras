@@ -33,7 +33,7 @@ Chaque œuvre attend sa photo dans `public/images/oeuvres/<slug>.jpg`. Tant qu'u
 
 ## Photos allégées
 
-Avant chaque construction (`npm run build` ou `npm run dev`), le script `scripts/vignettes.mjs`
-crée des versions WebP de chaque photo (480, 960 et 1600 px) dans `public/images/_v/`.
-Le navigateur charge la plus petite taille suffisante pour l'écran. Ces fichiers ne sont pas
-versionnés : il suffit d'ajouter une photo JPEG dans `public/images/` et elles sont recréées.
+Chaque photo existe aussi en WebP à plusieurs tailles (480, 960 et 1600 px) dans `public/images/_v/`.
+Le navigateur charge la plus petite taille suffisante pour l'écran.
+Après avoir ajouté ou remplacé une photo JPEG dans `public/images/`, lancer `npm run vignettes`
+puis versionner les fichiers créés. Sans vignette, le site affiche simplement le JPEG d'origine.

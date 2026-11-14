@@ -1,7 +1,7 @@
-// Génère, avant chaque construction, des versions WebP allégées de chaque photo
+// Génère (commande : npm run vignettes) des versions WebP allégées de chaque photo
 // (480, 960 et 1600 px de large au plus) dans public/images/_v/.
 // Le navigateur choisit ensuite la taille adaptée à l'écran (attribut srcset).
-// Les fichiers générés ne sont pas versionnés : ils sont recréés à chaque build.
+// Les fichiers générés sont versionnés avec le site : relancer après tout ajout de photo.
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';

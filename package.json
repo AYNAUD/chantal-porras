@@ -4,9 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/vignettes.mjs",
     "dev": "astro dev",
-    "prebuild": "node scripts/vignettes.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "images": "node scripts/recuperer-images.mjs",
@@ -15,7 +13,6 @@
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
     "@fontsource/work-sans": "^5.3.0",
-    "astro": "^5.18.2",
-    "sharp": "^0.34.5"
+    "astro": "^5.18.2"
   }
 }

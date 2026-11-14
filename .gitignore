@@ -1,5 +1,3 @@
 node_modules/
 dist/
 .astro/
-# Versions WebP générées à chaque build (scripts/vignettes.mjs)
-public/images/_v/
